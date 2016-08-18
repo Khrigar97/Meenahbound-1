@@ -1,0 +1,129 @@
+<sburb><classes>
+<action class='fourthRoomIntro' command='talk'><args>
+	@meenah_happy MEENAH: en fin llorica
+  @meenah_happy MEENAH: ...te llamabas kankrat &#191;no?
+  @meenah_angry MEENAH: he estado pensando si... &#161;-E)(!
+  @meenah_fish:#ains MEENAH: &#191;d&#243;nde te has metido?
+  @meenah_wut2 MEENAH: qu&#233; chungo esto de hacer amigos
+</args></action>
+
+<action class='triggerEndTalk' command='moveSprite'>
+		<args>endSwitch,0,0</args>
+</action>
+
+<action class='endTalk1' command='talk' name='Eh, &#191;has visto al Vantas chill&#243;n?'><args>
+      @aranea_happytalk ARANEA: S&#237;, lo vi corriendo hace un momento. Se fue en esa direcci&#243;n, hacia un recuerdo de su antiguo vecindario.
+      @meenah_talk MEENAH: joer qu&#233; le pasa
+      @meenah_annoyedtalk:#tienes-un-caramelo-de-manta MEENAH: me huele el aliento o qu&#233;
+      @aranea_talk ARANEA: Creo que quiere estar solo. Trat&#243; de encerrar sus recuerdos para que nadie m&#225;s los viera, pero creo que no se ha percatado de la permea8ilidad de las 8ur8ujas. Si el recuerdo en cuesti&#243;n es lo suficientemente grande, cualquiera puede deam8ular en &#233;l desde donde desee.
+      @aranea_talk ARANEA: No creo que le haga mucha gracia ver a nuestros viejos amigos all&#237;.
+      @meenah_talk MEENAH: no jodas que ah&#237; tambi&#233;n hay m&#225;s de la panda
+      @meenah_talk:#viva-m&#225;s-besugos MEENAH: pues tambi&#233;n habr&#225; que hablar con ellos
+      @meenah_talk MEENAH: y echarle un cable al llorica OTRA VEZ
+      @meenah_wut2 MEENAH: lo que hay que hacer por ese ni&#241;o cojones
+      @aranea_happytalk ARANEA: Puede que de ah&#237; se de8a tu man&#237;a por &#233;l.
+      @meenah_idle MEENAH: te callas
+      <!--  -->
+</args><action class='triggerEndTalk'/></action>
+
+
+<action class='endTalk2' command='talk' name='Serket qu&#233; corales es esto.'><args>
+      @meenah_idle MEENAH: eh esto qu&#233; es
+      @meenah_talk MEENAH: est&#225;s vendiendo cosas
+      @meenah_fish MEENAH: pues que sepas que &#250;ltimamente ando algo escasa de pasta
+      @aranea_happytalk ARANEA: &#161;Ofrezco explicaciones! Te explico lo que quieras.
+      @meenah_creepylaugh MEENAH: ajajaja si crees que voy a aflojar la guita a cambio de una puta brasa vas lista
+      @aranea_happier ARANEA: &#161;No, no! No has entendido el negocio. &#161;YO te pagar&#233; a TI cinco 8oonpavos si escuchas explicaciones de lo que te interese!
+      @meenah_annoyed:#cielo-santo MEENAH: ah
+      @aranea_happytalk ARANEA: &#191;De qu&#233; quieres que te ha8le?
+      @meenah_idle:#estoy-pensando MEENAH: &#161;espera!
+      @aranea_talk ARANEA: &#191;No te decides por ninguno?
+      @meenah_annoyedtalk MEENAH: no es por el tema es que no s&#233; si merece la pena escucharte a&#250;n cobrando
+      @aranea_annoyed ARANEA: >::::(
+      @aranea_happytalk ARANEA: Esto lo haces por fastidiar. Jam&#225;s rechazar&#237;as dinero r&#225;pido.
+      @meenah_talk:#si-me-pongo-a-sobar-la-oferta-sigue-en-pie-no MEENAH: eso parece
+      @meenah_happy MEENAH: dispara
+
+      <!--  -->
+</args><action class='triggerEndTalk'/></action>
+
+
+<action class='endTalk3' command='talk' name='H&#225;blame de Kankri Vantas.'><args>
+      @aranea_happytalk ARANEA: El Vidente de la Sangre desempe&#241;&#243; un papel en el equipo totalmente distinto al de su sucesor, pero su potencial como jugador de la sangre tampoco lleg&#243; a materializarse. Fue en Alternia donde sus ha8ilidades empezaron a intervenir, pudiendo recordar nuestras vidas 8eforanas y todo por lo que ha8&#237;amos pasado.
+      @aranea_happytalk ARANEA: Record&#243; nuestra forma de vida pac&#237;fica y su af&#225;n por solidarizar a su gente. Siendo adulto pod&#237;a hacerlo de forma m&#225;s eficiente y madura. Y hasta heroica. Aprendi&#243; a motivar al pr&#243;jimo y a ser un verdadero l&#237;der, a&#250;n a pesar de que en esa cultura violenta todo estuviera en su contra. Le cost&#243; la vida, pero su mensaje perdur&#243;. Si no me equivoco, ahora esa cruz es del Caballero de la Sangre, le guste o no.
+      @aranea_happytalk ARANEA: En Alternia, muchos de nosotros nos hicimos adeptos de su doctrina en secreto. Igual que nosotros ahora, aunque con algo m&#225;s de indiferencia. &#161;Puede que porque estemos muertos! Yo me considero m&#225;s 8ien una "fan" de su historia y lo que &#233;sta representa. El potencial que nuestro amigo nunca lleg&#243; a encontrar, as&#237; como el que se oculta en el resto de nuestra gente.
+      @aranea_happytalk ARANEA: Las adversidades a las que se enfrent&#243; Kankri siendo el l&#237;der de la sesi&#243;n eran tan desesperantes como las de su sucesor. Le fue muy dif&#237;cil que los dem&#225;s le tomaran en serio. A pesar de tus frecuentes intentos de dividirnos y enfrentarnos con tu actitud pendenciera para hacernos m&#225;s fuertes - en vano -, &#233;l se esforza8a en aunarnos mediante sermones y proselitismo, tam8i&#233;n en vano. 
+      @meenah_annoyedtalk MEENAH: hala cuant&#237;simas cosas que ya me sab&#237;a
+      @aranea_happier ARANEA: &#161;Exacto! Ahora seguro que ya no se te olvida. &#161;Gracias por escucharme, aqu&#237; tienes tus cinco 8oond&#243;lares!
+      @meenah_creepy MEENAH: un placer hacer negocios contigo
+      <!--  -->
+</args><action class='triggerEndTalk'/></action>
+
+<action class='endTalk4' command='talk' name='H&#225;blame de Latula Pyrope.'><args>
+      @aranea_happytalk ARANEA: Cualquiera puede afirmar sin ning&#250;n g&#233;nero de duda que la Ca8allera de la Mente es la versi&#243;n m&#225;s "radical" de las Pyropes. Am8as tienen discapacidades que de ser descu8iertas, hu8ieran aca8ado en los tridentes de sus respectivas culturas. Como ya sa8r&#225;s, en Beforus ir al tridente significa8a algo 8ien distinto. En este caso ser&#237;a adoptada por alguien de una casta superior y mimada en exceso. Pero para alguien con un estilo de vida tan radical como lo es el suyo, no me negar&#225;s que ha8r&#237;a sido peor que la muerte.
+      @meenah_annoyedtalk MEENAH: mira serket estas explicaciones son cada vez m&#225;s capullas hasta para ti
+      @aranea_annoyedtalk ARANEA: &#191;Quieres que te d&#233; el dinero o no?
+      @meenah_talk MEENAH: sabes que yo me muevo por la saca
+      @aranea_mad ARANEA: Pues permanece en silencio y d&#233;jame ha8lar.
+      @meenah_wut2:#*huevos MEENAH: urrrhn manda huevas
+      @aranea_happytalk ARANEA: Tras perjudicarse la nariz en aquel tr&#225;gico accidente, su poderoso drag&#243;n lusus, m&#225;s viejo y sa8io de lo que nos podamos imaginar, empez&#243; a ense&#241;arle "nuevas formas de oler". Reinvent&#243; el sentido, usando otros &#243;rganos sensoriales como los ojos y las orejas, lo cual despert&#243; sensaciones desconocidas en su mente. Latula fue toda una inspiraci&#243;n y demostr&#243; sin ning&#250;n lugar a dudas que se puede superar cualquier discapacidad y que no supone ninguna tra8a para ser la m&#225;s radical posible.
+      @meenah_wut2 MEENAH: qu&#233;ee
+      @meenah_wut MEENAH: serket no me vayas a endosar las idioteces de ese mam&#243;n
+      @aranea_facepalmtalk ARANEA: No, eso &#250;ltimo lo dec&#237;a en 8roma. &#161;No te sulfures, Peixes!
+      @meenah_talk:#trit&#243;n#ya-sabes#el-de-la-mitolog&#237;a MEENAH: ya ya cu&#225;nto falta para cerrar el trit&#243;n
+      @aranea_think ARANEA: Veamos........
+      @meenah_talk MEENAH: t&#250; dime lo m&#237;nimo que tengo que escuchar pa largarme con dinerillo a casa
+      @aranea_happytalk ARANEA: Est&#225; 8ien. Aunque Latula lleva saliendo con Mituna varios eones seguidos, es un secreto a voces que tanto ella como Kankri sienten cosas complicadas y no correspondidas por el otro desde hace m&#225;s. De tal palo, tal astilla. Yyyyyyyy, &#161;ya! Ten.
+      @meenah_happy MEENAH: de puta madre
+      <!--  -->
+</args><action class='triggerEndTalk'/></action>
+
+<action class='endTalk5' command='talk' name='H&#225;blame de Porrim Maryam.'><args>
+      @aranea_happytalk ARANEA: La Dama del Espacio era nuestra important&#237;sima jugadora del Espacio as&#237; como la Fogonera de la Forja, pero como ya sa8r&#225;s, no progresamos mucho engendrando ranas ni en ning&#250;n otro aspecto del juego antes de que se diera el juicio final. Ha8&#237;a mucho desorden y mucho drama juvenil. La mayor parte de ese drama se centra8a, como no, en Kankri, y Porrim sol&#237;a sacarle las casta&#241;as del fuego. Dicha relaci&#243;n perdur&#243; en sus vidas alternienses, pero... desafortunadamente ella no aca8&#243; tan 8ien parada. Tuve algo que ver al respecto, &#161;pero como veo que no tienes los pies quietos, voy a saltarme esa parte!
+      @aranea_happytalk ARANEA: En 8eforus, mucho antes de que surgieran sus ha8ilidades como 8e8edora, creci&#243; en una casta entregada casi en cuerpo y alma a cuidar de la larva madre, incu8ar las cr&#237;as y proliferar la camada. Las sangre jade eran una casta en las que casi todos sus miem8ros eran exclusivamente mujeres y Porrim se resinti&#243; de ha8er salido del cascar&#243;n con unos roles designados por clase y g&#233;nero. Se enfrent&#243; a todos los roles que exist&#237;an en la sociedad 8eforana, as&#237; como los que esta8an entretejidos en la sesi&#243;n, tales como los reinos, la asignaci&#243;n de clases, la cultura de los consortes y dem&#225;s.
+      @aranea_happytalk ARANEA: Pero pasaron los ciclos en nuestra sesi&#243;n fallida y en ella renaci&#243; el inter&#233;s de cumplir con las o8ligaciones de su estirpe, la perduraci&#243;n de su raza, naturalmente, una responsa8ilidad que ahora es de su descendiente. Toda vida en 8eforus fue 8arrida y no pudimos triunfar en el juego, as&#237; que me ayud&#243; a 8uscar otra forma de reiniciar la...
+      @meenah_annoyed MEENAH: zzzzzz
+      @aranea_angry ARANEA: &#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;Ya casi ha8&#237;a aca8ado!!!!!!!!
+      @meenah_annoyedtalk MEENAH: deja de decirme cosas que ya s&#233; serki ella tambi&#233;n era amiga m&#237;a mujer
+      @meenah_annoyedtalk MEENAH: no le puedes dar m&#225;s vidilla al asunto
+      @aranea_idle ARANEA: No........
+      @meenah_wink MEENAH: esa se acostaba con t&#243; dios no
+      @meenah_wink MEENAH: quiero hasta el m&#225;s sucio detalle
+      @aranea_surprised ARANEA: &#191;C&#243;mo? 
+      @aranea_surprised ARANEA: No, Meenah. No te pago para escuchar cotilleos de tres al cuarto.
+      @aranea_think ARANEA: 8ueno, &#191;de qu&#233; ha8l&#225;8amos? Ay, se me ha ido el santo al cielo........
+      @meenah_happier MEENAH: ajajaja te est&#225;s poniendo roja t&#237;a
+      @meenah_ohyes:#???????????#FIDEOS-DE-CURIOSIDAD-EXTREMA MEENAH: no jodas que t&#250; y ella... ???????
+      @aranea_surprised ARANEA: 
+      @meenah_creepytalk MEENAH: toma tomate por qu&#233; no me dijiste nada cre&#237;a que &#233;ramos amigas
+      @aranea_madtalk ARANEA: Mira. &#161;Por muy in&#250;til y malograda que fuese la sesi&#243;n, tres ciclos son muchos!
+      @aranea_madtalk ARANEA: Piensas en el futuro y te ves viviendo unos miles de ciclos m&#225;s, sin ning&#250;n aliciente y........
+      @meenah_happier MEENAH: &#191;&#191;&#191;&#191;yyyy????
+      @aranea_facepalmtalk ARANEA: Solo... &#161;solo era una fase! Un l&#237;o de &#233;sos rojos, &#191;vale? No dur&#243; ni medio ciclo y...
+      @aranea_annoyedtalk ARANEA: Sa8es qu&#233;, te dar&#233; DIEZ 8oonpavos si cam8iamos de tema, &#191;&#191;&#191;&#191;&#191;&#191;&#191;&#191;trato????????
+      @meenah_happytalk MEENAH: que sean cien y trato
+      @aranea_angrytalk ARANEA: &#161;Argh, de acuerdo! &#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;Toma!!!!!!!!
+      @meenah_happytalk MEENAH: su imperiosa condescendencia te est&#225; agradecida por contribuir generosamente al nuevo imperio
+      @aranea_annoyedtalk ARANEA: Menos mal que hoy te has portado 8ien. &#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;Desde luego eres una ZORRA NATA!!!!!!!!
+      <!--  -->
+</args><action class='triggerEndTalk'/></action>
+
+<action class='endTalk6' command='removeOverlay' name='Paz.'>
+      <args>peanuts</args>
+</action>
+
+<action class='peanutActions' command='presentActions'>
+	<args>
+		<action class='endTalk1'/>
+		<action class='endTalk2'/>
+		<action class='endTalk3'/>
+		<action class='endTalk4'/>
+		<action class='endTalk5'/>
+		<action class='endTalk6'/>
+	</args>
+	<action command='moveSprite' noDelay='true'>
+		<args>endSwitch,10,0</args>
+	</action>
+</action>
+
+</classes></sburb>

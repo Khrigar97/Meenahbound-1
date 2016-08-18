@@ -1,0 +1,326 @@
+<sburb><classes>
+<action class='araneaDialog1' name='Hablar con Aranea.' command='talk'><args>
+      @aranea_happier ARANEA: &#161;Ah&#237; est&#225;s! 
+      @aranea_happy:#&#161;Te-hemos-echado-de-menos! ARANEA: Te he visto muy poco desde que nos acompa&#241;aste al m&#225;s all&#225;. S&#233; que eres de la "realeza" y todo eso, pero no es muy socia8le por tu parte estar todo el rato encerrada en tu suntuosa colmena lunar.
+      @meenah_talk MEENAH: pos mira aqu&#237; me tienes
+      @aranea_talk:#Juego-de-palabras#Con-8-letras#Oh-s&#237; ARANEA: S&#237;. Y te lo agradezco. Ahora mismo i8a a 8uscarte en tu... Cala8ozo. Y ha8lar de la desgracia que se cierne so8re el a8ismo.
+      @meenah_creepytalk:#las-explosiones MEENAH: &#161;&#161;&#161;toma!!! t&#250; tambi&#233;n las has visto eh
+      @meenah_happytalk:#el-calavera#aliento-l&#225;ser MEENAH: era cosa de &#233;se verdad
+      @meenah_idle:#eh MEENAH: lord carp&#237;n
+      @meenah_talk MEENAH: &#191;calibur&#243;n? c&#243;mo co&#241;o se llamaba
+      @aranea_annoyedtalk:#Da-yuyu ARANEA: Yo que t&#250; no dir&#237;a su verdadero nombre.
+      @meenah_annoyed MEENAH: qu&#233; m&#225;s da
+      @meenah_talk:#jeje MEENAH: no dec&#237;as que &#233;l ya estaba aqu&#237;
+      @aranea_madtalk:#Crimen-fantasmal#Segunda-muerte#Almicidio ARANEA: Supongo que s&#237;. Pero, efectivamente, el Lord del Tiempo fue el responsa8le de la devastaci&#243;n de aquella 8ur8uja del sue&#241;o y de la muerte de inconta8les fantasmas inocentes.
+      @meenah_idle:#... MEENAH: fantasmas inocentes
+      @meenah_annoyedtalk:#capulladas MEENAH: en serio se pu&#233; matar fantasmas qu&#233; gilipollez
+      @aranea_happytalk:#Por-ejemplo-t&#250; ARANEA: Yo no hago las reglas, Meenah. Simplemente las o8servo y se las explico minuciosamente a aquel que quiera escucharme.
+      @meenah_fish MEENAH: ya 
+      @meenah_talk:#chistes-de-peces#combox2#toma-ya MEENAH: mas comantarios tuyos lo que me salmaba
+      @meenah_creepy MEENAH: que s&#237; que la explosi&#243;n ha molao
+      @meenah_creepylaugh:#vamos-molan-pez-gato#38D#38D#38D MEENAH: &#161;&#161;&#161;las explosiones molan gato!!! 38D 
+      @aranea_talk:#8ueno........ ARANEA: Coincido en que es m&#225;s fascinante que todo lo que hemos visto a lo largo de los milenios. &#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;Pero los residentes del m&#225;s all&#225; corren el riesgo de ser exterminados!!!!!!!!
+      @aranea_think:#!!!!!!!! ARANEA: Otra vez.
+      @meenah_idle MEENAH: ya me he dado cuenta
+      @meenah_happytalk:#a-ver-si-ahora-no-palmamos-con-otra-bomba MEENAH: voy a volver a ser una hero&#237;na y salvaros el culo a todos
+      @aranea_surprised ARANEA: &#191;Ah, s&#237;?
+      @aranea_happier:#&#161;Me-ha-picado-la-curiosidad! ARANEA: &#191;Y qu&#233; plan tienes en mente?
+      @meenah_angrytalk:#hombre MEENAH: hacer equipo con todos los fantasmas y matar al capullo &#233;se
+      @aranea_angry ARANEA: &#161;C&#243;mo!
+      @aranea_facepalmtalk:#Mala-elecci&#243;n-de-muerte ARANEA: Oh, Meenah. Es una idea espantosa.
+      @meenah_idle MEENAH: ja
+      @meenah_happy MEENAH: como si t&#250; tuvieras una idea mejor
+      @aranea_happy ARANEA: &#191;Y si te digo que s&#237;? ::::)
+      <!--  -->
+</args></action>
+
+<action class='araneaDialog2' name='Preguntar por tus amigos.' command='talk'><args>
+      @meenah_talk:#amigos-mojama#gente-fantasmal#colegas-de-espectro#yo-qu&#233;-s&#233; MEENAH: eh d&#243;nde corales se ha metido el personal quer&#237;a decirles una cosilla
+      @aranea_talk ARANEA: Creo que casi todos nuestros amigos se han congregado en esta 8ur8uja.
+      @aranea_think ARANEA: Seguro que te los encuentras si exploras la zona.
+      @aranea_happytalk ARANEA: &#191;Qu&#233; les vas a decir?
+      @meenah_creepy:#reuni&#243;n-de-trolls-alfa-t&#250; MEENAH: hay que reunir de nuevo a la panda
+      @meenah_wink MEENAH: y arrasar al plasta del tiempo
+      @meenah_happytalk:#perdedores#expertos-en-perder#los-amos-de-la-perdida#pros-del-fracaso MEENAH: es invencible seg&#250;n t&#250; pero creo que por tragarnos esas gilipolleces de entrada siempre perdemos y quedamos como unos putos perdedores
+      @meenah_talk MEENAH: podemos conseguirlo ya sabes
+      @meenah_wut:#coralboraci&#243;n#lol MEENAH: trabajando juntos y tal
+      @meenah_happy:#o-quiz&#225;...... MEENAH: crear&#233; un ej&#233;rcito
+      @meenah_happier MEENAH: uno de FANTASMAS 38D
+      @meenah_ohyes:#mola-un-huevo MEENAH: ser&#237;a de glub madre y molar&#237;a no te parece
+      @aranea_madtalk ARANEA: Puede que mole. &#161;Pero no recomiendo tu estrategia!
+      @aranea_annoyedtalk ARANEA: As&#237; s&#243;lo se pudrir&#225;n permanentemente en el olvido. A no ser que se te haya ocurrido un plan mejor.
+      @meenah_fish MEENAH: y cu&#225;l es tu pasote de idea
+      @aranea_happy:#Paciencia#Peixes#Asonancia-aliterada ARANEA: Tener un poco m&#225;s de paciencia. 
+      @aranea_happytalk ARANEA: Yo he seguido ciertos indicios del paradero de un arma secreta que podr&#237;a ser la clave para derrotarlo. 
+      @meenah_idle MEENAH: no me jibias
+      @meenah_annoyed MEENAH: qu&#233; marma es
+      @aranea_annoyedtalk:#&#191;Marma?#&#191;En-serio,-Meenah? ARANEA: El marma........ digo, arma, no es un qu&#233;, sino un qui&#233;n.
+      @aranea_happytalk:#Aliens ARANEA: Se trata de la otra queru8&#237;n. El equivalente femenino del Lord, que anta&#241;o ocupa8a su mismo cuerpo.
+      @aranea_talk:#Raza-de-fascinaci&#243;n-xeno8iol&#243;gica ARANEA: Pero al alcanzar la madurez, la personalidad del chico prevaleci&#243; en el hu&#233;sped y asumi&#243; todo el control. 
+      @aranea_talk:#O-as&#237;-reza-la-leyenda ARANEA: T&#233;cnicamente, ella muri&#243; aquel d&#237;a, por lo que me imagino que su esp&#237;ritu vagar&#225; en alg&#250;n lugar del Anillo Lejano.
+      @aranea_madtalk ARANEA: De8emos encontrarla antes que &#233;l. Querr&#225; rematarla, seguro.
+      @meenah_annoyed:#eh MEENAH: una querub&#237;n
+      @meenah_wut2 MEENAH: qu&#233;
+      @meenah_annoyedtalk MEENAH: eh vale no he entendido ni jota pero
+      @meenah_annoyedtalk MEENAH: venga s&#237; ve a por la querubina esa
+      @meenah_creepytalk:#ej&#233;rcito-fantasmal#zorr&#243;n#joder-s&#237; MEENAH: yo me quedar&#233; aqu&#237; formando a mi ej&#233;rcito fantasmal ZORR&#211;N
+      @aranea_happytalk ARANEA: Muy 8ien. &#161;Te deseo la mejor de las suertes!
+      @aranea_talk:#Lo-que-se-dice,-una-eternidad ARANEA: Pero no olvides que nuestros compa&#241;eros no han participado en nada importante desde hace ya mucho tiempo.
+      @aranea_talk:#Espero-que-te-gusten-las-conversaciones-desesperantes ARANEA: Puede que reclutar miembros para tu ej&#233;rcito sea m&#225;s complicado de lo que parece.
+      @meenah_annoyed MEENAH: por favor
+      @meenah_talk:#tontolculos#pelotas-indecorosas#tonticos#peloteo MEENAH: bueno reconozco que ese hatajo de tontolculos se tocaron las pelotas mientras nosotras intent&#225;bamos pasarnos el juego
+      @meenah_happytalk MEENAH: pero ahora cuando haya acabao con esos se convertir&#225;n en la fiel mafia sanguinaria con furia jodequerubines que nuestra gente siempre debi&#243; ser
+      @meenah_creepylaugh:#batibruja#pisciputa#hostia-puta#s&#237;#s&#237;#s&#237;#s&#237; MEENAH: y por si piensas que no ser&#233; capaz )(-E D-E R-ECORDART-E qui&#233;n llegu&#233; a ser en otra dimensi&#243;n o lo que sea
+      @aranea_happytalk ARANEA: No hace falta que me lo recuerde, Su Condescendencia.
+      @aranea_happy:#::::) ARANEA: Pienso que sali&#243; del cascar&#243;n para ser tirana y rezo para que su campa&#241;a de avasallamiento e intimidaci&#243;n vaya de perlas.
+      @meenah_fishtalk MEENAH: ay eres la mejor serket ven p'ac&#225; 38*
+      <!--  -->
+</args></action>
+
+<action class='roseDialog1' name='Hablar con Rose.' command='talk'><args>
+      @meenah_creepy MEENAH: &#161;&#161;&#161;&#161;ey!!!!
+      @rose_idle ROSE: Hola.
+      @meenah_annoyed MEENAH: eres eh
+      @meenah_happier MEENAH: T&#218;
+      @rose_idle ROSE: S&#237;.
+      @meenah_wut:#y-tus-cuernos#vaya-anormal MEENAH: la humana no
+      @rose_talk ROSE: Correcto.
+      @rose_talk ROSE: Rose, para ser exactos.
+      @meenah_talk MEENAH: qu&#233; m&#225;s da esc&#250;chame bien humana quiero preguntarte alga
+      @rose_concern ROSE: Esto no se te da muy bien, &#191;verdad?
+      @meenah_wut2 MEENAH: eing
+      @rose_annoyedtalk ROSE: Hablar con la gente.
+      @meenah_wut2 MEENAH: vete a la mierda t&#237;a
+      @rose_happytalk:#Lo-cierto-es-que-te-entiendo. ROSE: No pasa nada. No quer&#237;a criticarte.
+      @rose_concern:#La-luna-beforana ROSE: Me han dicho cosas sobre ti. Ese terreno rosado y rocoso de ah&#237;. Es un recuerdo de tu hogar, &#191;no?
+      @meenah_annoyed:#... MEENAH: 
+      @rose_talk ROSE: Renunciaste al trono y te exiliaste en la luna, &#191;verdad? Y all&#237; viviste completamente sola... &#191;cu&#225;ntos a&#241;os?
+      @meenah_wut2 MEENAH: qu&#233; es eso de a&#241;os
+      @rose_happytalk:#Demencia-abismal#Fiebre-del-meteorito ROSE: Creo que hasta yo he perdido la noci&#243;n de lo que es un a&#241;o. Cuando pasas tanto tiempo en este sitio te pueden pasar esas cosas.
+      @meenah_annoyed MEENAH: ah
+      @rose_coytalk:#Ah,-y-me-gustan-tus-trenzas. ROSE: Tu car&#225;cter me ha despertado la curiosidad. Se nota que eres una persona interesante con mucho que contar.
+      @rose_concern ROSE: Seg&#250;n tengo entendido, en la luna descubriste algo que en un principio albergaba una copia de vuestro juego. &#191;Verdad?
+      @meenah_idle:#punto#punto#punto MEENAH: ...
+      @rose_happytalk ROSE: &#191;Y si echamos un rato las dos para conocernos mejor? Si puedes, claro.
+      @meenah_annoyed MEENAH: joer
+      @meenah_annoyedtalk MEENAH: eres como esa cotorra pero en alien
+      @meenah_talk:##otro-chiste-=#a-salto-de-qu&#233; MEENAH: parlanchina metomentodo y buena conmigo todo eso a manto de qu&#233;
+      @meenah_happytalk:#qu&#233;-horror MEENAH: si hasta tienes el mismo pijama de god tier
+      @meenah_creepylaugh:#con-el-fucsia-se-est&#225;-como-pez-en-el-agua MEENAH: no eres m&#225;s que otra chismosa vestida con ese brillante color naranja
+      @meenah_annoyed MEENAH: mira olv&#237;date de m&#237;
+      <!--  -->
+</args></action>
+
+<action class='roseDialog2' name='Pedirle a Rose que se una.' command='talk'><args>
+      @meenah_fish MEENAH: estooooo
+      @meenah_fishtalk MEENAH: humana bocazas
+      @meenah_happytalk:#eeeey MEENAH: aqu&#237; me tienes
+      @rose_happy:#:) ROSE: &#161;Hola!
+      @meenah_talk MEENAH: voy a sugerirte na cosilla
+      @meenah_talk MEENAH: te acuerdas del malo maloso ese
+      @meenah_happytalk:#pota-arco&#237;ris MEENAH: el que arras&#243; el cielo y se carg&#243; a una chusma muerta
+      @rose_annoyed ROSE: &#191;Lord English?
+      @rose_sad ROSE: S&#237;, s&#233; qui&#233;n es.
+      @meenah_creepytalk MEENAH: te hace matarlo juntas o...
+      @rose_idle ROSE: Por supuesto.
+      @meenah_happier:#dabuten MEENAH: &#161;&#161;&#161;&#161;toma!!!! 38D
+      @rose_happy:#Mucho-m&#225;s-tarde. ROSE: Pero m&#225;s tarde. 
+      @meenah_wut2:#agh MEENAH: cagonlamar
+      @rose_talk:#Isaac-Newton-Troll ROSE: Nuestro plan es tan riguroso que no podemos frenar su desarrollo. Ni tampoco la trayectoria de este meteorito, cuyo impulso tambi&#233;n es riguroso.
+      @rose_talk:#Jugadores-alfa#Guardianes-adolescentes#Diversi&#243;n ROSE: Debemos reunirnos con nuestros "ancestros", digamos, renacidos y ayudarles a ganar.
+      @rose_happytalk:#M&#225;s-diversi&#243;n ROSE: Espero que para entonces hayamos adquirido vigor y experiencia. Porque s&#243;lo entonces podremos derrotarle junto con vuestra ayuda.
+      @meenah_talk:#blablablablabla MEENAH: joder t&#237;a no te me pongas serket
+      @meenah_annoyedtalk MEENAH: anda deja ya de pensar tanto y v&#225;monos a partirle la cara
+      @meenah_happytalk:#MILLONES#bueno#tal-vez MEENAH: aqu&#237; hay millones de fantasmas tenemos superioridad num&#233;rica
+      @rose_annoyedtalk ROSE: Lo s&#233;. Pero aunque quisiese, no podr&#237;a irme contigo.
+      @rose_concern:#Se-parece-a-un-holograma,-&#191;no? ROSE: Yo ni siquiera estoy aqu&#237;. Ahora estoy durmiendo en el meteorito. En realidad, le est&#225;s hablando a una proyecci&#243;n on&#237;rica.
+      @meenah_annoyed:#eing MEENAH: eing
+      @rose_laugh ROSE: Veo que eres nueva en esto de las burbujas del sue&#241;o.
+      @rose_coytalk ROSE: Te explicar&#233; con mucho gusto su funcionamiento con todo lujo de detalles.
+      @meenah_angry MEENAH: agh
+      @meenah_angrytalk MEENAH: JUGADORAS D-E LA LUZ
+      @meenah_annoyedtalk MEENAH: hasta luego rosefang
+      <!--  -->
+</args></action>
+
+<action class='kanayaDialog1' name='Hablar con Kanaya.' command='talk'><args>
+      @meenah_talk MEENAH: anda tu eras la que se parece a maryam
+      @meenah_talk MEENAH: de qu&#233; vas t&#237;a
+      @kanaya_bored:#De-Qu&#233;-Van-Las-Cosas#Querer-Saber#Gente-Que-Se-Parece-A-Gente KANAYA: La T&#237;a Que Se Parece A Maryam Va De Que Se Pregunta De Qu&#233; Va La T&#237;a Que Se Parece A Peixes Concretamente De La Raz&#243;n Por La Que Esta Ha Suscitado El Inter&#233;s De La Susodicha Chica
+      @meenah_idle MEENAH: que por qu&#233;
+      @meenah_annoyed MEENAH: no s&#233;
+      @meenah_annoyedtalk:#bueno#que-haya-dos-captors-es-normal MEENAH: creo que dos maryams ya es pasarse
+      @meenah_happy MEENAH: con una nos sobra y nos basta 
+      @kanaya_smirktalk KANAYA: Me Has Le&#237;do El Pensamiento
+      @meenah_talk:#hablas-mu-raro MEENAH: t&#250; no eres como nuestra maryam
+      @meenah_happytalk MEENAH: aunque a decir verdad la nuestra dej&#243; el list&#243;n muy alto
+       @kanaya_facepalm:#Pensamientos#Y-Su-Semejanza-Entre-Ellos KANAYA: Me Has Vuelto A Leer El Pensamiento
+      @meenah_happytalk:#joder#que-me-deslumbras-t&#237;a#las-gafas-no-me-hacen-nada MEENAH: t&#250; tambi&#233;n eres una de esas bebedoras de arco iris
+      @kanaya_happy KANAYA: Supongo Que S&#237;
+      @meenah_idle MEENAH: oye
+      @meenah_talk MEENAH: t&#250; siempre est&#225;s as&#237; o
+      @kanaya_idle:#Es-Algo-Privado KANAYA: Que Yo Sepa S&#237;
+      @meenah_creepy MEENAH: ja
+      @kanaya_talk KANAYA: Acaso Existe Otro Grado De Auto Luminiscencia Y No Estaba Informada
+      @kanaya_bored:#Del-Uno-Al-Est&#250;pida KANAYA: De Ser As&#237; Como Me Tendr&#237;a Que Sentir Por Saber De Su Existencia
+      @meenah_talk MEENAH: yo no me chuto colorines pero nuestra maryam sabe como controlar eso
+      @kanaya_facepalm KANAYA: De Veras
+      @meenah_talk MEENAH: tendr&#237;a m&#225;s tiempo que t&#250; para averiguarlo
+      @meenah_happytalk MEENAH: est&#225;bamos muertas de asco durante tres ciclos en una sesi&#243;n que no val&#237;a pa nada era inevitable descubrir cosas sobre uno mismo
+      @meenah_annoyedtalk:##rollo#rollizo#jeje MEENAH: ese no es mi rollizo tendr&#225;s que pregunt&#225;rselo a ella
+      @kanaya_idle KANAYA: Mejor No
+      @meenah_idle MEENAH: y eso
+      @kanaya_happy KANAYA: Me Gustar&#237;a
+      @kanaya_smirktalk KANAYA: Pero No Tengo Agallas
+      @meenah_happy:#has-visto-que-tatuaje-tiene#mola-una-hueva MEENAH: venga mujer que es una t&#237;a muy guay
+      @kanaya_idle KANAYA: S&#237;
+      @kanaya_bored KANAYA: Es Alguien Espectacular
+      @kanaya_cry KANAYA: A La Par Que Intimidante
+      @kanaya_facepalm KANAYA: Sent&#237; La Misma Inquietud La &#218;ltima Vez Que Admir&#233; A Otra Persona
+      @meenah_idle MEENAH: ah s&#237; y qui&#233;n es esa otra
+      @kanaya_happy:#- KANAYA: ...
+      @meenah_idle MEENAH: ah
+      @meenah_happy MEENAH: conque
+      @meenah_wink MEENAH: es esa
+      @meenah_happytalk:#&#191;&#191;no?? MEENAH: la charlatana del pijama naranja
+      @kanaya_smirklaugh:#-#- KANAYA: ...
+      @meenah_wink MEENAH: vaya vaya
+      @meenah_happytalk MEENAH: antes os vi muy juntitas
+      @meenah_happytalk MEENAH: es tu churri
+      @meenah_wink MEENAH: o sea tu churri roja
+      @kanaya_smirklaugh:#-#-#- KANAYA: ...
+      @kanaya_smirktalk:#-#-#-#-#M&#225;s-Etiquetas-Vac&#237;as-Y-Vergonzosas KANAYA: Tal Vez
+      @meenah_idle MEENAH: ay qu&#233; tierno
+      <!--  -->
+</args></action>
+<action class='kanayaDialog2' name='Pedirle a Kanaya que se una.' command='talk'><args>
+      @meenah_creepytalk MEENAH: eh suced&#225;neo de maryam v&#225;monos a reventar a hulkzilla
+      @kanaya_talk KANAYA: Te Contestar&#237;a De Forma Positiva
+      @kanaya_talk KANAYA: Pero Mi Mirada Se Ha Dirigido Hacia Rose
+      @kanaya_bored:#Su-Enigm&#225;tica-E-Interminable-Sabidur&#237;a-No-Conoce-L&#237;mites#Sarcasmo-Humano KANAYA: La Cual Acaba De Neg&#225;rmelo Con La Cabeza En Un Pl&#225;cido Gesto De Complicidad
+      @meenah_annoyedtalk MEENAH: que no bebedora del bote que te est&#225; vacilando
+      @kanaya_happytalk KANAYA: Es Posible
+      @kanaya_talk:#Birria-De-Plan KANAYA: Pero Seamos Realistas Mi Respuesta Ser&#237;a Igualmente No
+      @meenah_talk MEENAH: como quieras m&#225;s sangre del calavera pa m&#237;
+      @kanaya_bored:#Sangre-Monstruosa-Y-Asquerosa KANAYA: Seguro Que Sabe Fatal
+      @meenah_happytalk MEENAH: claro jaja
+      @meenah_annoyed MEENAH: hala adios
+      <!--  -->
+</args></action>
+<action class='daveDialog1' name='Hablar con Dave.' command='talk'><args>
+      @meenah_talk MEENAH: ey t&#237;o de la capa
+      @meenah_annoyed MEENAH: t&#250; eras
+      @meenah_talk:#y-de-las-gafas MEENAH: el humano de la capa no
+      @dave_talk:#y-tambien-como#shaggy-2-capa DAVE: naci con ese nombre si
+      @dave_smug DAVE: pero estos zumbados insisten en llamarme dave
+      @meenah_idle MEENAH: en fin dave de la carpa
+      @meenah_happy MEENAH: d&#243;nde anda tu colega
+      @dave_huh DAVE: eh te refieres a mi hermano
+      @dave_huhtalk:#o-sea#muerto-pero-sin-fantasma-creo DAVE: esta muerto
+      @dave_talk:#hermano-infantil#anda-que DAVE: a no ser que te refieras a la version infantil con gafas puntiagudas que vimos antes
+      @dave_madtalk:#el-va-a-lo-suyo#desapareciendo-mientras-se-hace-el-misterioso DAVE: te acuerdas de cuando cogio a mi madre adolescente estando frita y si te he visto no me acuerdo
+      @meenah_idle MEENAH: no no
+      @meenah_idle MEENAH: ese no
+      @meenah_happytalk:#los-mejores-5-de-mi-vida#es-un-crack MEENAH: nos hemos chocado los cinco hace un rato pero no me refiero a &#233;l
+      @dave_huhtalk DAVE: que cuando os la habeis chocado
+      @dave_madtalk:#eso-no-mola DAVE: por que no se me ha informado de semejante chocada
+      @meenah_talk MEENAH: que s&#237; pero yo hablaba del otro colega tuyo
+      @meenah_creepylaugh:#ese-loco-de-vantas MEENAH: el llorica guay ese que antes se encabron&#243; y ahuec&#243; la aleta
+      @dave_idle DAVE: ah vale karkat
+      @dave_talk DAVE: pues por ahi andara no se
+      @dave_talk:#bueno-eh#mas-bien-le-esta-hablando-el DAVE: antes lo vi hablando con su ancestro
+      @dave_smug:#juerga-de-cretinos DAVE: creo que no le cae muy bien
+      @meenah_wut MEENAH: pero qu&#233;
+      @meenah_annoyedtalk MEENAH: al llorica no le conviene juntarse con ese mentecato
+      @dave_smug:#los-ancestros#ya-sabes DAVE: no creo que quiera realmente pero ya sabes como funciona esto de los ancestros
+      @meenah_idle MEENAH: ...
+      @dave_huhtalk DAVE: bueno igual no ya que tecnicamente tu ya eres un ancestro
+      @dave_talk:#creo-que-se-llamaba-fieri-o-algo-asi DAVE: el de una tia muerta a la que jamas conoci pero en fin
+      @dave_idle DAVE: es que
+      @dave_huh DAVE: no se
+      @dave_madtalk DAVE: ejercen una influencia inexplicable sobre ti
+      @dave_concern:#cacao#kanaya#pues-eso DAVE: fijate en kanaya desde que ha visto al suyo lleva un cacao encima
+      @dave_concern:#pasame-la-regla-tio DAVE: nada mas encontrarte al tuyo nace en ti el deseo irracional de estar a su altura
+      @dave_talk DAVE: y puede que en realidad no sean para tanto pero aun asi te sigues comiendo la cabeza sabes
+      @meenah_idle MEENAH: qu&#233; va
+      @meenah_talk MEENAH: mi ancestro era m&#225;s sosa que una ostra
+      @meenah_happytalk:#&#191;&#191;adem&#225;s-de-dos-poetas-payasos??#jajaja MEENAH: pero en otro universo llegu&#233; a ser una genocida apote&#243;sica y estaba al frente de todo lo cual tiene sentido
+      @meenah_ohyes:#dictadora-fucsia MEENAH: de modo que solo pod&#237;a estar a su altura y pedazo altura que llevamos
+      @dave_talk DAVE: y aquel dia el humano de la carpa descubrio que no hay mayor tesoro que una autoestima contra natura
+      @dave_idle DAVE: le dio las gracias a la princesa punki por compartir su brutal sabiduria y esta se dio media vuelta
+      @meenah_talk MEENAH: eh
+      @meenah_idle MEENAH: oye
+      @meenah_annoyed MEENAH: &#191;me acabas de vacilar?
+      <!--  -->
+</args></action>
+
+<action class='daveDialog2' name='Pedirle a Dave que se una.' command='talk'><args>
+      @dave_idle DAVE: lo he visto
+      @dave_talk:#el-recreo-privado-de-dave#cigala-paranormal#bufe-de-marisco-a-precio-de-coste#me-aburro DAVE: estaba mirando fijamente el espacio para contemplar un rato a los monstruos
+      @dave_huhtalk:#ben-stiller-casi-se-revuelve-en-su-tumba DAVE: y de repente pienso que se me han cascado las gafas
+      @dave_huhtalk:#joder-que-alivio#me-las-regalo-mi-colega-del-alma DAVE: pero resulta que la grieta no era cosa de las gafas sino del mismisimo espacio
+      @dave_concern:#monstruos-palmando#fantasmas-palmando#problemon DAVE: y me puse a escuchar y oi los gritos y la matanza y todo eso
+      @dave_mad DAVE: desde entonces me cuesta dormir
+      @dave_smug:#ah-si#lo-olvidaba DAVE: bueno supongo que ahora estoy durmiendo a pierna suelta
+      @dave_talk:#anatomia-troll#perver#&#191;no? DAVE: como te estoy hablando en una burbuja pero en fin ahora mis habitos de sue&#241;o son raros de pelotas indecorosas
+      @dave_talk:#proyectos-alucinantes DAVE: aunque me entretengo con proyectos alucinantes y bueno eso ayuda
+      @meenah_creepy MEENAH: pos seguro que tienes m&#225;s ganas de carg&#225;rtelo que yo
+      @meenah_creepytalk:#pa-que-quieres-la-capa#si-no-es-para-machacar-a-los-malos MEENAH: &#250;nete a mi vamos y le damos una atunda en equipo 38)
+      @dave_idle:#nah DAVE: nop
+      @dave_talk:#dave_eburbujas DAVE: agradezco tu oferta pero prefiero quedarme aqui con mis eburbujas
+      @meenah_wut2 MEENAH: tus e qu&#233;
+      @dave_smug:#no-me-diras-que-no DAVE: las eburbujas son la polla
+      @dave_talk DAVE: es una chorrada que se me acaba de ocurrir
+      @dave_talk:#tu-no-me-preguntes-como#y-estaremos-en-paz DAVE: este sitio esta compuesto de los recuerdos de la gente asi que he trasteado un poco 
+      @dave_smug DAVE: no necesito internet para liarla sabes ya le estoy sacando partido al mas alla
+      @meenah_wut MEENAH: pero qu&#233;ee
+      @meenah_annoyedtalk:#soberana-gilipollez MEENAH: puede que est&#233;s de capa ca&#237;da chaval pero eso es una soberana gilipollez
+      @meenah_talk MEENAH: venga besugo el querub&#237;n nos espera
+      @dave_idle:#bueno-vale#que-me-estoy-quedando-contigo#que-no DAVE: nah
+      @dave_huh DAVE: es que
+      @dave_huhtalk:#entre-comillas DAVE: &#191;se "supone" que tengo que matarlo?
+      @dave_madtalk:#&#191;te-acuerdas-de-esa-chorrada-de-darle-ca&#241;a-al-body?#jajaja-dios DAVE: mira me he fijado en que hay muchisimas se&#241;ales y todas apuntan a lo mismo
+      @dave_madtalk:#me-han-dicho-que-tiene-un-diente-de-oro#estais-de-cachondeo-o-que DAVE: que soy yo EL que lo derrotara pues muy bien ya lo hare cuando me acabe enzarzando con esa gran mole verde espacial o lo que quiera que sea
+      @dave_huhtalk:#me-van-mas-los-comics DAVE: no se no creo yo que tenga madera de heroe rebelde
+      @dave_huhtalk:#rebelde-antes-de-ponerse-de-moda#y-antes-de-que-quisiese DAVE: es que todo es tan trillado y de cajon que no se si mi rebeldia es ironica o me lo hago de verdad
+      @dave_concern:#pero-como-de-rebelde-tienes-que-ESTAR-para-HACEEEEER-bla-bla-bla#sgytj DAVE: a veces me pregunto si sere lo bastante rebelde como para dar la talla o si solo soy rebelde por ser rebelde
+      @dave_concern:#bueno-tambien-pienso-en-marionetas...#irrelevante DAVE: y como esa rebeldia se vuelve meta no puedo dejar de pensar en que todo esto es una soplapollez
+      @dave_talk:#autocompasion-ironica DAVE: me conozco demasiado como para querer ser el heroe asi que no malgastes el tiempo conmigo
+      @meenah_idle MEENAH: hala
+      @meenah_ohyes MEENAH: qu&#233;eeee guaaaaaaaay
+      @meenah_annoyed MEENAH: NO
+      <!--  -->
+</args></action>
+
+<action class='daveDialog3' name='Ser Dave.' command='talk'><args>
+      @dave_huh:#eh#q#u#e DAVE: espera
+      @dave_huhtalk:#entre-comillas DAVE: &#191;que quieres "ser yo"?
+      @meenah_idle MEENAH: s&#237; por qu&#233; no
+      @dave_madtalk:#en-cuya-vista-esta-la-palma-de-mi-mano DAVE: bueno sin meternos mucho en lo absurda que es tu peticion a simple vista
+      @dave_mad DAVE: va a ser que no
+      @dave_talk DAVE: acabas de empezar con esta aventura que te has montado en las burbujas no ves que es demasiado pronto
+      @meenah_talk:#hablar-con-los-colegas-a-lo-ni&#241;o-guay#puede-que-cambie-la-m&#250;sica MEENAH: no me ralles tronco deja que te controle a ver
+      @dave_idle DAVE: no
+      @meenah_idle MEENAH: por qu&#233;
+      @dave_talk DAVE: prefiero que no nos pongamos demasiado meta con esto
+      @dave_huh:#bueno DAVE: en fin
+      @dave_concern DAVE: mira
+      @dave_concern:#es-acojonante-que-te-lo-este-explicando DAVE: ahora tienes como objetivo reunir a tus amigos muertos para crear un ejercito o algo
+      @dave_madtalk DAVE: yo creo que tu plan es una cutrez pero bueno se te ve motivada
+      @meenah_idle:#es-verdad MEENAH: seh 
+      @dave_huhtalk:#entre-comillas DAVE: entonces para que perder el tiempo "siendo otras personas" es que no tiene logica
+      @dave_madtalk DAVE: no puedes ser nadie en esta playa de los cojones sin ir mas lejos porque se supone que deberias ir cagando leches por la arena buscando a tus amigos
+      @dave_smug:#jajaja#ya-me-he-pasado-de-meta#dimito DAVE: pon algo de tu parte tambien co&#241;o
+      @meenah_wut2:#muermazo MEENAH: jo&#233;
+      @dave_talk DAVE: cuando te pongas al dia con tu panda podras ser alguno de ellos
+      @dave_smug DAVE: que co&#241;o hasta puedes ser alguno de nosotros cuando todo esto acabe siendo una decepcion de cagarse como todos temiamos
+      @dave_talk DAVE: ya si eso en otra zona
+      @meenah_fish:#&#191;qu&#233;?#besugo MEENAH: qu&#233; zona
+      @dave_talk DAVE: me refiero a otra maldita burbuja
+      @dave_talk DAVE: de alguien recordando un puto bosque magico o su poblado natal o yo que se
+      @dave_talk DAVE: lo que sea pero aqui desde luego no
+      @dave_mad:#y-de-esto#no-volveremos-a-hablar#&#191;ser-dave?#anda-ya DAVE: venga largo
+      @meenah_wut2 MEENAH: VAL-E
+      <!--  -->
+</args></action>
+</classes></sburb>

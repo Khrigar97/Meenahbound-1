@@ -1,0 +1,236 @@
+<sburb><classes>
+
+<action class='doorTalk2' sprite='meenah' command='talk' name='Abrir la puerta.'><args>
+      @meenah_talk MEENAH: vantas la contrase&#241;a
+      @karkat_what KARKAT: (&#191;eh?)
+      @meenah_talk MEENAH: esta puerta es tuya no
+      @karkat_talk KARKAT: (y eso por que.)
+      @meenah_annoyedtalk MEENAH: el simbolo de la puerta es id&#233;ntico al de tu camiseta joder
+      @meenah_annoyedtalk:#pchooo MEENAH: te crees que me chupo el dedo o qu&#233;
+      @karkat_sullen KARKAT: (si, vale, es mia. igual me harte de que ciertos entrometidos de mierda estuvieran deambulando por mis recuerdos PERSONALES y PRIVADOS.)
+      @meenah_talk MEENAH: ya no hace falta que susurres aqu&#237; no hay nadie
+      @karkat_idle KARKAT: AH
+      @meenah_happytalk MEENAH: bueno va la contrase&#241;a
+      @karkat_talk KARKAT: APARTA, QUE TE LA ESCRIBO.
+      @meenah_angrytalk MEENAH: &#161;&#161;&#161;que me la digas llorica!!! 
+      @karkat_shout KARKAT: POR DIOS, ESTO ES ABSURDO. &#191;&#191;&#191;TE IMPORTARIA DECIRME QUE CO&#209;O HAY MAS LOGICO QUE DEJAR QUE SEA YO EL QUE META MI CONTRASE&#209;A???
+      @meenah_fish MEENAH: t&#237;o quieres que venga kankri a por ti y te de la brasa hasta los cuernecillos
+      @karkat_horror:#DIOS-MIO KARKAT: &#161;&#161;&#161;NO!!! LO QUE SEA MENOS ESO.
+      @karkat_yell KARKAT: VALE, TE LA DIRE, PERO...
+      @karkat_yell KARKAT: NO VAYAS GRITANDOLA POR AHI.
+      @karkat_talk KARKAT: LA CONTRASE&#209;A ES......
+      @karkat_eyeroll1~dialogimg_karkat1  
+      @meenah_idle:#? MEENAH: comorl
+      @karkat_eyeroll2~dialogimg_karkat1 
+      @meenah_wut2 MEENAH: no se te oye macho
+      @karkat_shout:#ESTAS-SORDA-O-QUE KARKAT: &#161;&#161;&#161;&#161;&#161;&#161;&#161;SI TANTO ME ODIO, POR QUE NO ME CASO CON MI ODIO!!!!!!!
+      @meenah_wut MEENAH: -ESO es la contrase&#241;a
+      @meenah_annoyedtalk MEENAH: y qu&#233; glubs significa eso
+      @karkat_yell KARKAT: NADA. NO ES ASUNTO TUYO.
+      @karkat_sullen KARKAT: ES ALGO QUE ME RECUERDA A UNA VIEJA AMIGA. &#161;&#191;VALE?! &#191;PODEMOS IRNOS?
+      @meenah_happier MEENAH: &#161;ipso facto! por aqu&#237; llorica
+      @meenah_creepytalk MEENAH: no te arrepentir&#225;s de haberte encontrado a esta estrella de mar fugaz
+      @karkat_facepalm KARKAT: 
+      <!-- open the door -->
+</args>
+<action command='removeSprite'>
+	<args>thirdRoomDoor,thirdRoom</args>
+	<action command='addWalkable' noDelay='true'>
+		<args>thirdRoomDoorWalkable,thirdRoom</args>
+		<action command='playSound' noDelay='true'>
+			<args>openSound2</args>
+		</action>
+	</action>
+</action>
+</action>
+
+   <!-- if meenah talks to karkat (while kankri is away)-->
+<action class='karkatTalk2' sprite='meenah' command='talk' name='Hablar con Karkat.'>
+	<args>
+      @meenah_idle MEENAH: (&#161;psst!)
+      @meenah_happy MEENAH: (oye vantas)
+      @karkat_idle KARKAT: (que.)
+      @meenah_happytalk MEENAH: (aprovecha)
+      @meenah_creepytalk:#tortuga/tugurio...#eh-la-doy-por-buena MEENAH: (largu&#233;monos de este tortugurio)
+      @karkat_sullen KARKAT: (oh...)
+      @karkat_talk KARKAT: (casi que mejor no.)
+      @meenah_talk MEENAH: (anda llorica no dejes que ese sosaina controle tu vida)
+      @meenah_annoyedtalk MEENAH: (&#191;&#191;&#191;o es que quieres quedarte a escuchar sus chorcadas de pulpotente hasta el fin de los d&#237;as???)
+      @karkat_eyeroll1:#&#191;CHORCADAS-DE-PULPOTENTE?#JODER-CON-LOS-HABITANTES-DE-MAR KARKAT: (para nada.)
+      @meenah_creepy MEENAH: (&#161;pues V-ENGA!)
+      <!-- karkat then follows -->
+	</args>
+	<action command='follow'>
+		<args>karkat,meenah</args>
+		<action command='removeAction'>
+			<args>thirdRoomDoor,Abrir la puerta.</args>
+			<action command='removeAction'>
+				<args>karkat,Hablar con Karkat.</args>
+				<action command='addActions'>
+					<args>thirdRoomDoor,
+						<action class='doorTalk2'/>
+					</args>
+				</action>
+			</action>
+		</action>
+	</action>
+</action>
+
+<action class='meenahTalk1' sprite='latula' command='talk' name='Hablar con Meenah.'><args>
+      @latula_happytalk LATULA: &#161;3y 3y, qu3 pass4 pol1zon!
+      @meenah_idle MEENAH: joer latuli
+      @meenah_talk:#repartiendo-motes-como-si-fueran-pececillos MEENAH: ya ni me acuerdo de todos esos motes tan radicales 
+      @meenah_fish MEENAH: sabes qu&#233; siempre me ha molao lo de talonario qued&#233;monos con ese nombre
+      @latula_happier:#Y44 LATULA: &#161;tu m4nd4s! 4 m1 t4mb13n m3 p4r3c3 un mot3 fl1p4nt3. &#161;&#161;&#161;CHOC4 3SOS C1NCO T14!!!
+      @meenah_angry:#AAY MEENAH: mira mejor no AYYYYYY
+      @latula_idle3:#>8( LATULA: ooh lo s13nto, &#191;&#191;&#191;t3 h3 h3cho d4&#241;o???
+      @meenah_idle MEENAH: nnn... &#191;no? he dicho
+      @meenah_happier:#s&#237;#eso MEENAH: guuuUAYYYYYY
+      @meenah_ohyes MEENAH: en plan "t&#237;a la chocas GUAYYYY"
+      @latula_happier:#4pot3os3rr1mo LATULA: &#161;&#161;&#161;4S1 S3 H4BL4!!! 3s 4pot3os1co qu3 h4y4s vu3lto
+      @meenah_idle MEENAH: hombre ya pero
+      @meenah_talk:#delf&#237;n#s&#237;-est&#225;-un-poco-cogido-por-los-pelos-como-chiste#aun-as&#237;-vale-como-tal MEENAH: no crees que est&#225;s exagerando un PEL&#205;N nuestra relaci&#243;n era poco m&#225;s que neutral
+      @latula_annoyedtalk:#l4-m4s4cr3-supr3m4#4n4log14s-d3-mu3rt3-r4d1c4l3s LATULA: pu3d3 s3r. p3ro h3 t3nido mucho t13mpo p4r4 p3ns4r, 4nt3s Y d3spu3s d3 qu3 3st1r4s3mos l4 p4t4.
+      @latula_annoyedtalk LATULA: y tuv3 un4 r3v3l4c1on d3 l4s GORD4S 4c3rc4 d3 t1, bu3no d3 nosotr4s. y 3st4b4 3qu1voc4d4.
+      @latula_angry LATULA: d3sd3 qu3 nos conoc1mos ll3v4b4 p3ns4ndo cas1 todo 3l r4to, &#191;&#191;&#191;POR QU3 H4Y DOS F3NOM3NOS CHULOS 3N 3L GRUPO???
+      @latula_talk LATULA: 3s p4s4rs3 un poco, &#191;no cr33s?
+      @meenah_idle:#&#191;est&#225;s-de-co&#241;a? MEENAH: buehhh
+      @latula_talk LATULA: yo t3 v314 como m1 r1v4l, 3n un4 3sp3c13 d3 R4D1C4L3O 4 dos. n4tur4lm3nt3, yo 3r4 l4 qu3 g4n4b4 3n m1 m3nt3. &#161;&#161;&#161;&#161;p3ro y4 t3 d1go qu3 3st4b4 3qu1voc4d4!!!!
+      @meenah_idle MEENAH: en serio
+      @latula_happytalk LATULA: &#161;CL4RO! yo soy l4 MOLON4 d3l grupo, &#161;&#161;&#161;&#161;y tu 3r3s l4 M4LOT4 d3l grupo!!!! &#161;t13n3 s3nt1do! &#191;&#191;&#191;4 qu3 t13n3 S3NT1DO 3H???
+      @meenah_annoyed MEENAH: t&#237;a
+      @meenah_wut2:#vaya-cutrez-latuli MEENAH: es la excusa m&#225;s anormal que me han contao en la vida
+      @latula_laugh LATULA: &#191;lo v3s t4lon4r1io? sab14 qu3 t3ndr14s un4 4ct1tud c1n1c4 4nt3 m1s chorr4d4s d3 n3urot1c4, y con r4zon. &#161;&#161;&#161;3r3s LO M4S!!!
+      <!--  -->
+</args></action>
+
+<action class='meenahTalk2' sprite='porrim' command='talk' name='Hablar con Meenah.'><args>
+      @porrim_talk PORRIM: No+ te culpo+ po+r querer matarlo+ cuanto+ antes.
+      @meenah_idle MEENAH: eh
+      @porrim_annoyed:#Privilegio+s-de-mo+co+so+ PORRIM: Al Lo+rd del Tiempo+. Es un buen ejemplo+ de lo+ que le intento+ decir a Kankri, pero+ co+mo+ nunca me escucha.
+      @porrim_talk PORRIM: Despu&#233;s del scratch, nuestro+ mundo+ segu&#237;a siendo+ superficialmente matriarcal, pero+ en realidad era una tiran&#237;a patriarcal bastante m&#225;s envuelta y siniestra.
+      @meenah_idle MEENAH: pero qu&#233; dices
+      @porrim_talk:#Un-excelente-anfitri&#243;+n PORRIM: Tu yo+ po+st-scratch, la que se co+nvirti&#243;+ en emperatriz, no+ era m&#225;s que una sierva del Lo+rd. De fo+rma impl&#237;cita durante su largo+ reinado+, gracias a las manipulacio+nes de su ingenio+so+ criado+. 
+      @porrim_talk PORRIM: Y tras nuestra extinci&#243;+n, tambi&#233;n de fo+rma expl&#237;cita. Se co+nvirti&#243;+ en su sirviente o+ficial, acatando+ sus &#243;+rdenes po+sterio+res.
+      @meenah_angry MEENAH: &#161;&#161;&#161;&#161;&#161;QU-&#201;!!!!!
+      @porrim_talk:#Esta-vez-hab&#237;an-cambiado+-algo+-las-to+rnas PORRIM: Lo+ mismo+ hizo+ co+n Damara. Ella era su fiel Bruja del Tiempo+ y le ayud&#243;+ a transfo+rmar nuestro+ mundo+ en una pesadilla. Cuando+ dej&#243;+ de serle de utilidad, o+s enfrent&#243;+ a ella y a ti en un duelo+ que parec&#237;a una versi&#243;+n reto+rcida del co+nflicto+ que tuvisteis anta&#241;o+.
+      @meenah_angrytalk MEENAH: &#161;eso ya es pasarse t&#237;a!
+      @porrim_angrytalk PORRIM: En resumidas cuentas, adem&#225;s de en general ser un rastrero+, parece que le encanta ser cruel co+n las mujeres.
+      @porrim_surprisetalk PORRIM: Si es cierto+ que le est&#225; dando+ caza al fantasma de su difunta "hermana", me co+mpadezco+ de ella.
+      @meenah_angrytalk:#RARRRG)( MEENAH: MIRA NO
+      @meenah_angrytalk:#AARRRRAAAWWWRRG)(G MEENAH: VOY A CARGARM-E A -ES-E -ENG-ENDRO CAC)(AS
+      @meenah_angrytalk:#AAAUURGRURGGU)(G)()( MEENAH: M-E )(AR-&#201; CON -ES-E ABRIGO D-E MI-ERDA Y M-E LO PONDR-&#201; -EN MI TRONO
+      @meenah_angrytalk:#ARRARARGLAAARUGRGURGGLE MEENAH: L-E ARRANCAR-&#201; LA CAB-EZA Y M-E LA PONDR-&#201; A MODO D-E CORONA Y )(AR-&#201; QU-E SU TORSO V-ERDUZCO -ENSANGR-ENTAO S-E INCLIN-E ANT-E MI
+      @porrim_surprise:#Guau PORRIM: Em,
+      @porrim_annoyedtalk PORRIM: Que tengas suerte.
+      <!--  -->
+</args></action>
+
+<action class='meenahTalk3' sprite='kankri' command='talk' name='Hablar con Meenah.'><args>
+      @kankri_talk KANKRI: Caram6a, Meenah. N9 te ha6ia vist9 llegar. P9drias ha6ern9s saludad9.
+      @meenah_idle MEENAH: ah
+      @meenah_talk:#ni-hablar-ni-escucharte-ni-estar-contigo MEENAH: bueno es que no me apetec&#237;a molestaros ni a ti ni al llorica ese
+      @kankri_talk:#muchisim9s KANKRI: N9 h96iera sid9 una m9lestia. Karkat y y9 esta6am9s a unas h9ras de p9ner punt9 final al primer9 del que imagin9 que seran much9s, muchisim9s serm9nes.
+      @kankri_talk2 KANKRI: Tenem9s much9 de que hablar. Algun9s pr96lemas ya han cuajad9. La eternidad me ha ayudad9 a pr9gresar en l9s temas que n9s afectan a t9d9s. Inclus9 a la p96laci9n que tecnicamente n9 existe. 
+      @kankri_talk4:#Arreand9-estas-malditas-6estias-lanudas#Que-c9&#241;azo,-se&#241;9r KANKRI: He tenid9 much9 tiemp9 para pensar. En es9 y en n9s9tr9s. Es decir, en nuestr9 equip9 y en es9s err9res que c9m9 dice el dich9, "n9 hay mal que p9r 6ien n9 venga". Hem9s tenid9 nuestras diferencias, siend9 tu la lider de fact9 en l9 que se refiere a estrategias y ejecuci9n... y ejecuci9nes literales tam6ien sup9ng9. Mientras que y9 c96re pr9tag9nism9 c9m9 el past9r espiritual indiscuti6le del re6a&#241;9. 
+      @meenah_annoyed MEENAH: eh
+      @meenah_happy:#&#191;pastor-espiritual-indiscutible?#ajajajajaja MEENAH: lo que t&#250; digas
+      @kankri_talk2 KANKRI: He 9id9 que tam6ien estas reclutand9 nuev9s miem6r9s para una milicia. Que empresa mas atrevida. Aunque n9 seria la primera vez. Antes de lanzarte a la aventura, esper9 que dediques un9s cuant9s cicl9s a escuchar mis...
+      @meenah_idle MEENAH: oye vantas
+      @meenah_talk:#gambas-marisco-y-tal#peces#38) MEENAH: me encantar&#237;a quedarme a escuchar tu basura en serio me muero de gambas
+      @meenah_talk MEENAH: no tienes ni idea de cuanto lo he echado en falta
+      @meenah_talk MEENAH: pero tengo que hacer
+      @meenah_idle:#s&#237;#eso MEENAH: algo
+      @meenah_happy MEENAH: ya mismo
+      @kankri_idle KANKRI: 9h.
+      @meenah_talk MEENAH: te importar&#237;a esperarme
+      @meenah_talk MEENAH: AQU&#205; mismo
+      @meenah_talk MEENAH: sin moverte
+      @meenah_idle MEENAH: unos minutillos
+      @kankri_idle KANKRI: &#161;Sin pr96lema!
+      @kankri_talk4 KANKRI: N9 tengas prisa, me t9mare mi tiemp9 para preparar el pream6ul9 que dara may9r c9ntext9 a mis reprimendas de caracter pr9hi6itiv9 y dicharacher9. Es decir parl9te9.
+      @meenah_creepy MEENAH: ahora vuelvo chaval
+      <!-- then "Be Meenah?" prompt -->
+</args></action>
+
+<action class='aradiaTalk1' command='talk' name='Hablar.'><args>
+      @aradia_happy ARADIA: &#161;muy buenas!
+      @aradia_happytalk ARADIA: ya era hora de que llegaras
+      @meenah_idle MEENAH: ...
+      @meenah_angrytalk:#no-me-jodas MEENAH: &#191;&#191;&#191;M-EGIDO???
+      @aradia_talk ARADIA: si pero no soy quien crees que soy
+      @meenah_talk MEENAH: pos qu&#233; eres
+      @aradia_talk:#el-mas-alla#&#191;sabes? ARADIA: en este sitio me considero una especie de recepcionista
+      @aradia_laugh:#:D ARADIA: diria que soy una excelente anfitriona pero me temo que esa frase ya no es lo que era
+      @meenah_talk MEENAH: te pareces a megido
+      @meenah_annoyedtalk MEENAH: pero t&#250; no eres la megido de siempre
+      @aradia_idle ARADIA: &#161;por supuesto que no!
+      @aradia_talk:#aunque-lo-de-'tiempo'-ya-solo-sea-una-forma-de-hablar ARADIA: en cualquier caso yo y otra gente preocupada por la situacion de la realidad llevamos mucho tiempo esperando este dia
+      @meenah_wut:#que-se-ha-part&#237;o-el-cielo#hada-est&#250;pida MEENAH: pero qu&#233; co&#241;o os pasa en la cabeza
+      @aradia_talk ARADIA: me referia a tu llegada mas que a los destrozos
+      @aradia_happytalk ARADIA: tienes grandes planes en mente &#191;verdad?
+      @meenah_annoyed:#puede MEENAH: ...
+      @meenah_annoyedtalk MEENAH: y a ti qu&#233;
+      @aradia_talk ARADIA: &#161;oh nada! esto no es mas que una bienvenida formal
+      @aradia_talk ARADIA: &#161;ya puedes irte! ve en busca de tus amigos
+      @aradia_talk ARADIA: &#191;no ES por eso por lo que abandonaste el palacio?
+      @meenah_idle MEENAH: pues s&#237;
+      @meenah_annoyedtalk:#pero-te-tengo-fichada#hada-con-cara-de-megido MEENAH: bueno me las piro
+      @aradia_happy ARADIA: &#161;chao!
+      <!--  -->
+</args></action>
+
+<action class='aradiaTalk2' command='talk' name='Hablar.'><args>
+@aradia_idle ARADIA: &#191;te has perdido?
+      @meenah_annoyed MEENAH: eh
+      @meenah_annoyed MEENAH: por ah&#237; no era no
+      @aradia_talk ARADIA: ese camino no tiene salida
+      @aradia_talk ARADIA: tu destino esta
+      @aradia_point ARADIA: ALLI
+      @aradia_wink:#pistolas-dobles#y-;) ARADIA: *nk-nkt*
+      @meenah_annoyed MEENAH: gracias
+      @meenah_annoyed MEENAH: t&#237;a rara
+</args></action>
+
+<action class='andrewTalk1' command='talk' name='Hablar.'>
+	<args>
+			@meenah_idle MEENAH: eh naranjucho
+			@meenah_idle MEENAH: bueno
+			@meenah_idle:#puto-calabac&#237;n MEENAH: amarilluzco
+			@! .............
+			@meenah_idle:#y-estas-bolas-negras-qu&#233; MEENAH: qu&#233; co&#241;o te pasa
+			@meenah_idle MEENAH: oye &#191;est&#225;s
+			@meenah_idle:#dios MEENAH: llorando?
+			@! SILENCIO.
+			@! Si me traes un caballo, ser&#233; todo tuyo.
+			<!--  -->
+	</args>
+</action>
+
+<action class='andrewTalk2' command='talk' name='Hablar.'>
+	<args>
+			@! Dios m&#237;o, no puede ser.
+      @!:#&#191;o-s&#237;? NO PUEDE SER......
+      @! _S&#205;_
+      @! &#161;ME HAS TRA&#205;DO UN CABALLO!
+      @! Qu&#233; maravilla de gancho equino, con un nudo y todo. Es el regalo m&#225;s incre&#237;ble que me han hecho nunca. Lo adorar&#233; toda mi vida.
+      @! Y eh, oye...
+      @!:#&#191;&#191;&#191;&#191;&#191;QUI&#201;N-es-Vriska????? &#191;Vienes mucho por aqu&#237;?
+      @meenah_wut2 MEENAH: dios m&#237;o
+      @! Bueno, un trato es un trato.
+      @! Ahora estoy a tu servicio.
+      @meenah_wut MEENAH: por qu&#233;......
+      @meenah_wut MEENAH: para QU&#201; le habr&#233; dado al capullo este el gancho ese
+      <!--  -->
+	</args>
+	<action command='removeAction'>
+		<args>andrew,Talk.</args>
+		<action command='follow'>
+			<args>andrew,meenah</args>
+			<action command='deltaSprite'>
+				<args>questSwitch,20,0</args>
+			</action>
+		</action>
+	</action>
+</action>
+</classes></sburb>

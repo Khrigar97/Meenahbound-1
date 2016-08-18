@@ -1,0 +1,719 @@
+<sburb description="third room">
+
+<dependencies>
+	<dependency>thirdRoomDialog.xml</dependency>
+</dependencies>
+
+<classes>
+	<animation class='karkat-dialog' frameInterval='6' x='-180' y='-454'/>
+	<animation class='kankri-dialog' frameInterval='6' x='-180' y='-454'/>
+	<animation class='porrim-dialog' frameInterval='6' x='-180' y='-444'/>
+	<animation class='latula-dialog' frameInterval='6' x='-200' y='-524'/>
+  
+  <action class='snoop' sprite='meenah' command='talk' name='Hablar.'>
+		<args>
+		@! &#161;Anda, ah&#237; est&#225; el llorica! Pero parece que est&#225; enfrascado en una acalorada discusi&#243;n con el Vantas de vuestro equipo. No estar&#237;a bien meterse donde no te llaman.
+		@!:#cotilleo#grosera &#191;Escuchar la conversaci&#243;n?
+		</args>
+		<action command='presentActions'>
+			<args>
+				<action class='eavesdrop'>
+
+				</action>
+				<action command='cancel' name='No.'>
+						<!-- nothing -->
+				</action>
+			</args>
+		</action>
+	</action>
+	
+	<action class='fix-twins' command='moveSprite'>
+		<args>kankri,1200,2870</args>
+		<action command='moveSprite'>
+    	<args>karkat,1140,2870</args>
+    	<action command='playAnimation'>
+    		<args>kankri,walkLeft</args>
+    		<action command='unfollow'>
+    			<args>karkat</args>
+		  		<action command='playAnimation'>
+		  			<args>karkat,walkRight</args>
+		  			<action command='removeAction'>
+							<args>kankri,Hablar.</args>
+							<action command='removeAction'>
+								<args>karkat,Hablar.</args>
+								<action command='removeAction'>
+									<args>karkat,Hablar con Karkat.</args>
+									<action command='addActions'>
+										<args>kankri,
+											<action class='snoop'/>
+										</args>
+										<action command='addActions'>
+											<args>karkat,
+												<action class='snoop'/>
+												<action class='karkatTalk1'/>
+											</args>
+											<action command='removeAction'>
+												<args>thirdRoomDoor,Abrir la puerta.</args>
+												<action command='addActions'>
+													<args>thirdRoomDoor,
+														<action class='doorTalk1'/>
+													</args>
+												</action>
+											</action>
+										</action>
+									</action>
+								</action>
+							</action>
+						</action>
+					</action>
+	  		</action>
+  		</action>
+  	</action>
+  </action>
+</classes>
+
+<assets>
+	<asset name='porrimSheet' type='graphic'>chars/porrim.png</asset>
+	<asset name='kankriSheet' type='graphic'>chars/kankri.png</asset>
+	<asset name='karkatSheet' type='graphic'>chars/karkat.png</asset>
+
+	<asset name='latulaSheet' type='graphic'>chars/latula.png</asset>
+	<asset name='latulaOllieSheet' type='graphic'>chars/latula_ollie.png</asset>
+	<asset name='latulaSkateSheet' type='graphic'>chars/latula_skate.png</asset>
+	<asset name='latulaBoardSheet' type='graphic'>chars/latula_withboard.png</asset>
+
+
+	<asset name='blueBubbleSheet' type='graphic'>objects/bluebubble.png</asset>
+	<asset name='skateboard' type='graphic'>objects/latula_board.png</asset>
+	
+	<asset name='thirdRoomMap' type='graphic'>backgrounds/thirdRoomMap.png</asset>
+	<asset name='thirdRoomBG_0_0' type='graphic'>backgrounds/slices/thirdRoomBG_0_0.png</asset>
+<asset name='thirdRoomBG_0_1' type='graphic'>backgrounds/slices/thirdRoomBG_0_1.png</asset>
+<asset name='thirdRoomBG_0_2' type='graphic'>backgrounds/slices/thirdRoomBG_0_2.png</asset>
+<asset name='thirdRoomBG_0_3' type='graphic'>backgrounds/slices/thirdRoomBG_0_3.png</asset>
+<asset name='thirdRoomBG_0_4' type='graphic'>backgrounds/slices/thirdRoomBG_0_4.png</asset>
+<asset name='thirdRoomBG_1_0' type='graphic'>backgrounds/slices/thirdRoomBG_1_0.png</asset>
+<asset name='thirdRoomBG_1_1' type='graphic'>backgrounds/slices/thirdRoomBG_1_1.png</asset>
+<asset name='thirdRoomBG_1_2' type='graphic'>backgrounds/slices/thirdRoomBG_1_2.png</asset>
+<asset name='thirdRoomBG_1_3' type='graphic'>backgrounds/slices/thirdRoomBG_1_3.png</asset>
+<asset name='thirdRoomBG_1_4' type='graphic'>backgrounds/slices/thirdRoomBG_1_4.png</asset>
+<asset name='thirdRoomBG_2_0' type='graphic'>backgrounds/slices/thirdRoomBG_2_0.png</asset>
+<asset name='thirdRoomBG_2_1' type='graphic'>backgrounds/slices/thirdRoomBG_2_1.png</asset>
+<asset name='thirdRoomBG_2_2' type='graphic'>backgrounds/slices/thirdRoomBG_2_2.png</asset>
+<asset name='thirdRoomBG_2_3' type='graphic'>backgrounds/slices/thirdRoomBG_2_3.png</asset>
+<asset name='thirdRoomBG_2_4' type='graphic'>backgrounds/slices/thirdRoomBG_2_4.png</asset>
+<asset name='thirdRoomBG_3_0' type='graphic'>backgrounds/slices/thirdRoomBG_3_0.png</asset>
+<asset name='thirdRoomBG_3_1' type='graphic'>backgrounds/slices/thirdRoomBG_3_1.png</asset>
+<asset name='thirdRoomBG_3_2' type='graphic'>backgrounds/slices/thirdRoomBG_3_2.png</asset>
+<asset name='thirdRoomBG_3_3' type='graphic'>backgrounds/slices/thirdRoomBG_3_3.png</asset>
+<asset name='thirdRoomBG_3_4' type='graphic'>backgrounds/slices/thirdRoomBG_3_4.png</asset>
+<asset name='thirdRoomBG_4_0' type='graphic'>backgrounds/slices/thirdRoomBG_4_0.png</asset>
+<asset name='thirdRoomBG_4_1' type='graphic'>backgrounds/slices/thirdRoomBG_4_1.png</asset>
+<asset name='thirdRoomBG_4_2' type='graphic'>backgrounds/slices/thirdRoomBG_4_2.png</asset>
+<asset name='thirdRoomBG_4_3' type='graphic'>backgrounds/slices/thirdRoomBG_4_3.png</asset>
+<asset name='thirdRoomBG_4_4' type='graphic'>backgrounds/slices/thirdRoomBG_4_4.png</asset>
+<asset name='thirdRoomFG_0_0' type='graphic'>backgrounds/slices/thirdRoomFG_0_0.png</asset>
+<asset name='thirdRoomFG_0_1' type='graphic'>backgrounds/slices/thirdRoomFG_0_1.png</asset>
+
+<asset name='thirdRoomFG_1_0' type='graphic'>backgrounds/slices/thirdRoomFG_1_0.png</asset>
+<asset name='thirdRoomFG_1_1' type='graphic'>backgrounds/slices/thirdRoomFG_1_1.png</asset>
+
+<asset name='thirdRoomFG_2_0' type='graphic'>backgrounds/slices/thirdRoomFG_2_0.png</asset>
+<asset name='thirdRoomFG_2_1' type='graphic'>backgrounds/slices/thirdRoomFG_2_1.png</asset>
+<asset name='thirdRoomFG_2_2' type='graphic'>backgrounds/slices/thirdRoomFG_2_2.png</asset>
+
+<asset name='thirdRoomFG_3_0' type='graphic'>backgrounds/slices/thirdRoomFG_3_0.png</asset>
+
+<asset name='thirdRoomFG_3_2' type='graphic'>backgrounds/slices/thirdRoomFG_3_2.png</asset>
+
+
+	<asset name='thirdRoomStaircase' type='graphic'>backgrounds/thirdRoomStairs.png</asset>
+	<asset name='thirdRoomDoor' type='graphic'>backgrounds/thirdRoomDoor.png</asset>
+	
+	<asset name='thirdRoomExtraStairs' type='path'>1680,1520;2120,1092;2120,1186;1683,1611</asset>
+	<asset name='thirdRoomExtraWalkable' type='path'>1680,1520;2130,1092;2330,1092;2350,1186;2150,1186;1683,1611</asset>
+	<asset name='thirdRoomExtraUnwalkable' type='path'>1680,1460;2130,1032;2150,1086;1683,1520</asset>
+	<asset name='thirdRoomExtraUnwalkable2' type='path'>2150,1186;2150,1651;1683,1651;1683,1610</asset>
+	<asset name='thirdRoomStairs1' type='path'>1374,2868;1370,2776;2098,3458;2098,3558</asset>
+	<asset name='thirdRoomStairs2' type='path'>3162,3568;3156,3456;3604,3034;3598,3154</asset>
+	<asset name='thirdRoomStairs3' type='path'>3705,2592;3705,2668;3270,2265;3276,2144</asset>
+	<asset name='thirdRoomDoorWalkable' type='path'>3036,534;3124,536;3125,619;3033,629</asset>
+  
+  
+	<asset name='kankri_glance' type='graphic'>dialogs/kankri_glance.png</asset>
+	<asset name='kankri_idle' type='graphic'>dialogs/kankri_idle.png</asset>
+	<asset name='kankri_rage' type='graphic'>dialogs/kankri_rage.png</asset>
+	<asset name='kankri_talk2' type='graphic'>dialogs/kankri_talk2.png</asset>
+	<asset name='kankri_talk3' type='graphic'>dialogs/kankri_talk3.png</asset>
+	<asset name='kankri_talk4' type='graphic'>dialogs/kankri_talk4.png</asset>
+	<asset name='kankri_talk' type='graphic'>dialogs/kankri_talk.png</asset>
+	
+	<asset name='karkat_eyeroll1' type='graphic'>dialogs/karkat_eyeroll1.png</asset>
+	<asset name='karkat_eyeroll2' type='graphic'>dialogs/karkat_eyeroll2.png</asset>
+	<asset name='karkat_facepalm' type='graphic'>dialogs/karkat_facepalm.png</asset>
+	<asset name='karkat_horror' type='graphic'>dialogs/karkat_horror.png</asset>
+	<asset name='karkat_idle' type='graphic'>dialogs/karkat_idle.png</asset>
+	<asset name='karkat_shout' type='graphic'>dialogs/karkat_shout.png</asset>
+	<asset name='karkat_sullen' type='graphic'>dialogs/karkat_sullen.png</asset>
+	<asset name='karkat_talk' type='graphic'>dialogs/karkat_talk.png</asset>
+	<asset name='karkat_what' type='graphic'>dialogs/karkat_what.png</asset>
+	<asset name='karkat_yell' type='graphic'>dialogs/karkat_yell.png</asset>
+	
+	<asset name='latula_angry' type='graphic'>dialogs/latula_angry.png</asset>
+	<asset name='latula_annoyed' type='graphic'>dialogs/latula_annoyed.png</asset>
+	<asset name='latula_annoyedtalk' type='graphic'>dialogs/latula_annoyedtalk.png</asset>
+	<asset name='latula_bored' type='graphic'>dialogs/latula_bored.png</asset>
+	<asset name='latula_happier' type='graphic'>dialogs/latula_happier.png</asset>
+	<asset name='latula_happy' type='graphic'>dialogs/latula_happy.png</asset>
+	<asset name='latula_happytalk' type='graphic'>dialogs/latula_happytalk.png</asset>
+	<asset name='latula_huh' type='graphic'>dialogs/latula_huh.png</asset>
+	<asset name='latula_idle2' type='graphic'>dialogs/latula_idle2.png</asset>
+	<asset name='latula_idle3' type='graphic'>dialogs/latula_idle3.png</asset>
+	<asset name='latula_idle' type='graphic'>dialogs/latula_idle.png</asset>
+	<asset name='latula_laugh' type='graphic'>dialogs/latula_laugh.png</asset>
+	<asset name='latula_shades1' type='graphic'>dialogs/latula_shades1.png</asset>
+	<asset name='latula_shades2' type='graphic'>dialogs/latula_shades2.png</asset>
+	<asset name='latula_shine' type='graphic'>dialogs/latula_shine.png</asset>
+	<asset name='latula_stunt' type='graphic'>dialogs/latula_stunt.png</asset>
+	<asset name='latula_talk' type='graphic'>dialogs/latula_talk.png</asset>
+	<asset name='latula_tongue' type='graphic'>dialogs/latula_tongue.png</asset>
+	
+	<asset name='porrim_angry2' type='graphic'>dialogs/porrim_angry2.png</asset>
+	<asset name='porrim_angry' type='graphic'>dialogs/porrim_angry.png</asset>
+	<asset name='porrim_angrytalk' type='graphic'>dialogs/porrim_angrytalk.png</asset>
+	<asset name='porrim_annoyed2' type='graphic'>dialogs/porrim_annoyed2.png</asset>
+	<asset name='porrim_annoyed' type='graphic'>dialogs/porrim_annoyed.png</asset>
+	<asset name='porrim_annoyedtalk' type='graphic'>dialogs/porrim_annoyedtalk.png</asset>
+	<asset name='porrim_happier' type='graphic'>dialogs/porrim_happier.png</asset>
+	<asset name='porrim_happy' type='graphic'>dialogs/porrim_happy.png</asset>
+	<asset name='porrim_happytalk' type='graphic'>dialogs/porrim_happytalk.png</asset>
+	<asset name='porrim_idle' type='graphic'>dialogs/porrim_idle.png</asset>
+	<asset name='porrim_laugh' type='graphic'>dialogs/porrim_laugh.png</asset>
+	<asset name='porrim_light' type='graphic'>dialogs/porrim_light.png</asset>
+	<asset name='porrim_surprise' type='graphic'>dialogs/porrim_surprise.png</asset>
+	<asset name='porrim_surprisetalk' type='graphic'>dialogs/porrim_surprisetalk.png</asset>
+	<asset name='porrim_talk' type='graphic'>dialogs/porrim_talk.png</asset>
+	
+	<asset name='dialogimg_kankri1' type='graphic'>dialogs/dialogimg_kankri1.png</asset>
+	<asset name='dialogimg_kankri2' type='graphic'>dialogs/dialogimg_kankri2.png</asset>
+	<asset name='dialogimg_karkat1' type='graphic'>dialogs/dialogimg_karkat1.png</asset>
+	
+	<asset name='darlingDolorosa' type='audio'>audio/music/Dolorosa.oga;audio/music/Dolorosa.mp3</asset>
+	<asset name='gameGlare' type='audio'>audio/music/GameGlare.oga;audio/music/GameGlare.mp3</asset>
+	<asset name='ironInfidel' type='audio'>audio/music/IronInfidelCut.oga;audio/music/IronInfidelCut.mp3</asset>
+	
+	<asset name='obj23' type='graphic'>objects/23.png</asset>
+<asset name='obj24' type='graphic'>objects/24.png</asset>
+<asset name='obj25' type='graphic'>objects/25.png</asset>
+<asset name='obj26' type='graphic'>objects/26.png</asset>
+<asset name='obj27' type='graphic'>objects/27.png</asset>
+<asset name='obj28' type='graphic'>objects/28.png</asset>
+<asset name='obj29' type='graphic'>objects/29.png</asset>
+<asset name='obj30' type='graphic'>objects/30.png</asset>
+<asset name='obj31' type='graphic'>objects/31.png</asset>
+<asset name='obj32' type='graphic'>objects/32.png</asset>
+<asset name='obj33' type='graphic'>objects/33.png</asset>
+<asset name='obj34' type='graphic'>objects/34.png</asset>
+<asset name='obj35' type='graphic'>objects/35.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>
+		<animation name='kankri_glance' class='kankri-dialog' sheet='kankri_glance'/>
+		<animation name='kankri_idle' class='kankri-dialog' sheet='kankri_idle' />
+		<animation name='kankri_rage' class='kankri-dialog' sheet='kankri_rage'  length='2'/>
+		<animation name='kankri_talk2' class='kankri-dialog' sheet='kankri_talk2'  length='2'/>
+		<animation name='kankri_talk3' class='kankri-dialog' sheet='kankri_talk3'  length='2'/>
+		<animation name='kankri_talk4' class='kankri-dialog' sheet='kankri_talk4'  length='2'/>
+		<animation name='kankri_talk' class='kankri-dialog' sheet='kankri_talk'  length='2'/>
+		
+		<animation name='karkat_eyeroll1' class='karkat-dialog' sheet='karkat_eyeroll1' />
+		<animation name='karkat_eyeroll2' class='karkat-dialog' sheet='karkat_eyeroll2' />
+		<animation name='karkat_facepalm' class='karkat-dialog' sheet='karkat_facepalm'  length='2'/>
+		<animation name='karkat_horror' class='karkat-dialog' sheet='karkat_horror' />
+		<animation name='karkat_idle' class='karkat-dialog' sheet='karkat_idle' />
+		<animation name='karkat_shout' class='karkat-dialog' sheet='karkat_shout'  length='2'/>
+		<animation name='karkat_sullen' class='karkat-dialog' sheet='karkat_sullen' />
+		<animation name='karkat_talk' class='karkat-dialog' sheet='karkat_talk'  length='2'/>
+		<animation name='karkat_what' class='karkat-dialog' sheet='karkat_what' />
+		<animation name='karkat_yell' class='karkat-dialog' sheet='karkat_yell' length='2' />
+		
+		<animation name='latula_angry' class='latula-dialog' sheet='latula_angry' x='-240' length='2'/>
+		<animation name='latula_annoyed' class='latula-dialog' sheet='latula_annoyed' />
+		<animation name='latula_annoyedtalk' class='latula-dialog' sheet='latula_annoyedtalk' length='2'/>
+		<animation name='latula_bored' class='latula-dialog' sheet='latula_bored' length='2'/>
+		<animation name='latula_happier' class='latula-dialog' sheet='latula_happier' />
+		<animation name='latula_happy' class='latula-dialog' sheet='latula_happy' />
+		<animation name='latula_happytalk' class='latula-dialog' sheet='latula_happytalk' length='2'/>
+		<animation name='latula_huh' class='latula-dialog' sheet='latula_huh' length='1'/>
+		<animation name='latula_idle2' class='latula-dialog' sheet='latula_idle2' />
+		<animation name='latula_idle3' class='latula-dialog' sheet='latula_idle3' />
+		<animation name='latula_idle' class='latula-dialog' sheet='latula_idle' />
+		<animation name='latula_laugh' class='latula-dialog' sheet='latula_laugh' length='2'/>
+		<animation name='latula_shades1' class='latula-dialog' sheet='latula_shades1' />
+		<animation name='latula_shades2' class='latula-dialog' sheet='latula_shades2' />
+		<animation name='latula_shine' class='latula-dialog' sheet='latula_shine' length='3'/>
+		<animation name='latula_stunt' class='latula-dialog' sheet='latula_stunt' length='2'/>
+		<animation name='latula_talk' class='latula-dialog' sheet='latula_talk' length='2'/>
+		<animation name='latula_tongue' class='latula-dialog' sheet='latula_tongue' />
+		
+		<animation name='porrim_angry2' class='porrim-dialog' sheet='porrim_angry2' length='2'/>
+		<animation name='porrim_angry' class='porrim-dialog' sheet='porrim_angry' />
+		<animation name='porrim_angrytalk' class='porrim-dialog' sheet='porrim_angrytalk' length='2'/>
+		<animation name='porrim_annoyed2' class='porrim-dialog' sheet='porrim_annoyed2' length='2'/>
+		<animation name='porrim_annoyed' class='porrim-dialog' sheet='porrim_annoyed' />
+		<animation name='porrim_annoyedtalk' class='porrim-dialog' sheet='porrim_annoyedtalk' length='2'/>
+		<animation name='porrim_happier' class='porrim-dialog' sheet='porrim_happier' />
+		<animation name='porrim_happy' class='porrim-dialog' sheet='porrim_happy' />
+		<animation name='porrim_happytalk' class='porrim-dialog' sheet='porrim_happytalk' length='2'/>
+		<animation name='porrim_idle' class='porrim-dialog' sheet='porrim_idle' />
+		<animation name='porrim_laugh' class='porrim-dialog' sheet='porrim_laugh' length='2'/>
+		<animation name='porrim_light' class='porrim-dialog' sheet='porrim_light' />
+		<animation name='porrim_surprise' class='porrim-dialog' sheet='porrim_surprise' />
+		<animation name='porrim_surprisetalk' class='porrim-dialog' sheet='porrim_surprisetalk' length='2'/>
+		<animation name='porrim_talk' class='porrim-dialog' sheet='porrim_talk' length='2'/>
+	</dialogsprites>
+</hud>
+
+<sprite name='stairEventSwitch' x='0' y='-50'>
+	<animation name='image' sheet='blueBubbleSheet' x='-20' y='-40' />
+</sprite>
+
+<sprite name='thirdRoomStaircase' x='1610' y='1034'>
+	<animation sheet='thirdRoomStaircase'/>
+</sprite>
+
+<sprite name='skateboard' depthing='2'>
+	<animation sheet='skateboard' x='-30' y='-40'/>
+</sprite>
+
+<sprite depthing='2' name='obj23'>
+<animation x='-50' y='-50' sheet='obj23'/>
+</sprite>
+<sprite depthing='2' name='obj24'>
+<animation x='-50' y='-50' sheet='obj24'/>
+</sprite>
+<sprite depthing='2' name='obj25'>
+<animation x='-50' y='-50' sheet='obj25'/>
+</sprite>
+<sprite depthing='2' name='obj26'>
+<animation x='-50' y='-50' sheet='obj26'/>
+</sprite>
+<sprite depthing='2' name='obj27'>
+<animation x='-50' y='-50' sheet='obj27'/>
+</sprite>
+<sprite depthing='2' name='obj28'>
+<animation x='-50' y='-50' sheet='obj28'/>
+</sprite>
+<sprite depthing='2' name='obj29'>
+<animation x='-50' y='-50' sheet='obj29'/>
+</sprite>
+<sprite depthing='2' name='obj30'>
+<animation x='-50' y='-50' sheet='obj30'/>
+</sprite>
+<sprite depthing='2' name='obj31'>
+<animation x='-50' y='-50' sheet='obj31'/>
+</sprite>
+<sprite depthing='2' name='obj32'>
+<animation x='-50' y='-50' sheet='obj32'/>
+</sprite>
+<sprite depthing='2' name='obj33'>
+<animation x='-50' y='-50' sheet='obj33'/>
+</sprite>
+<sprite depthing='2' name='obj34'>
+<animation x='-50' y='-50' sheet='obj34'/>
+</sprite>
+<sprite depthing='2' name='obj35'>
+<animation x='-50' y='-50' sheet='obj35'/>
+</sprite>
+
+<rooms>
+   <room name='thirdRoom' width='4622' height='3966' walkableMap='thirdRoomMap'>
+  	<paths>
+  		<motionpath path="thirdRoomStairs1" xtox = '0.7' xtoy = '0.7' ytox='0' ytoy = '1' dx='0' dy='0'/>
+  		<motionpath path="thirdRoomStairs2" xtox = '0.7' xtoy = '-0.7' ytox='0' ytoy = '1' dx='0' dy='0'/>
+  		<motionpath path="thirdRoomStairs3" xtox = '0.7' xtoy = '0.7' ytox='0' ytoy = '1' dx='0' dy='0'/>
+  	</paths>
+  	<triggers>
+		<trigger>spriteProperty,char,y&lt;180
+			<trigger>spriteProperty,char,name=meenah
+  			<action command='deltaSprite'>
+  				<args>char,0,12</args>
+  				<action command='changeRoomRemote'>secondRoom.xml,secondRoom,1746,3410</action>
+  			</action>
+  		</trigger>
+		</trigger>
+		<trigger>spriteProperty,char,y&lt;180
+			<trigger>spriteProperty,char,name!=meenah
+  			<action command='deltaSprite'>
+  				<args>char,0,12</args>
+  				<action class='exitAlert'/>
+  			</action>
+  		</trigger>
+		</trigger>
+		<trigger>inBox,char,3000,535,153,50
+			<action command='deltaSprite'>
+  				<args>char,0,12</args>
+				<action command='unfollow'>
+					<args>karkat</args>
+					<action command='changeRoomRemote'>
+						<args>fourthRoom.xml,fourthRoom,388,1360</args>
+						<action command='playSong'>
+							<args>elevatorstuck,10.895</args>
+						</action>
+					</action>
+				</action>
+			</action>
+		</trigger>
+		<trigger>spriteProperty,char,y&lt;1750
+			<trigger detonate='true'>spriteProperty,char,x&gt;2410
+				 <action command='changeFocus'>
+				 	<args>latula</args>
+				 	<action command='deltaSprite' noWait='true' times='18'>
+				 		<args>latula,23,-9</args>
+				 		<action command='playAnimation' noWait='true'>
+				 			<args>latula,skate</args>
+				 			<action command='deltaSprite' times='14' noWait='true'>
+				 				<args>latula,21,0</args>
+				 				<action command='playAnimation' noWait='true'>
+				 					<args>latula,board</args>
+				 					<action command='changeFocus' noWait='true'>
+				 						<args>char</args>
+				 					</action>
+				 				</action>
+				 			</action>
+				 		</action>
+				 	</action>
+				 </action>
+			</trigger>
+  		</trigger>	
+  		<trigger>spriteProperty,stairEventSwitch,y&gt;-100
+  			<trigger>spriteProperty,char,name=meenah
+  				<trigger>spriteProperty,latula,state=walkFront
+  					<trigger>spriteProperty,char,x&lt;2160
+  						<trigger>spriteProperty,char,x&gt;2147
+  							<trigger>spriteProperty,char,y&lt;1300
+  								<trigger>spriteProperty,char,y&gt;1088
+  									<action command='deltaSprite'>
+  										<args>char,12,0</args>
+  										<action command='talk'>
+  											<args> @! &#191;Marcarte un grind en la barandilla?</args>
+												<action command='presentActions'>
+													<args>
+														<action command='waitFor' name='S&#237;.'>
+															<args>time,40</args>
+															<action command='becomeNPC' noWait='true'>
+																<args></args>
+																<action command='moveSprite' noWait='true'>
+																	<args>latula,1536,1530</args>
+																	<action command='moveSprite' noWait='true'>
+																		<args>char,2064,1107</args>
+																		<action command='playAnimation' noWait='true' noDelay='true'>
+																			<args>char,skate</args>
+																			<action command='playSound' noWait='true' noDelay='true'>
+																				<args>grindSound</args>
+																				<action command='deltaSprite' times='30' noWait='true'>
+																					<args>char,-12,12</args>
+																					<action command='moveSprite' noWait='true'>
+																						<args>char,1630,1530</args>
+																						<action command='playAnimation' noWait='true' noDelay='true'>
+																							<args>char,idleFront</args>
+																							<action class='grindTalk' command='talk' noWait='true'>
+																								<action command='becomePlayer'>
+																									<args>char</args>
+																									<action command='deltaSprite'>
+																										<args>stairEventSwitch,0,-100</args>
+																										<action command='addActions' noWait='true'>
+																											<args>latula,
+																												<action command='changeChar' name='Ser Latula.'>
+																													<args>latula</args>
+																													<action command='playSong'>
+																														<args>gameGlare,18.19</args>
+																														<action class='fix-twins'/>
+																													</action>
+																												</action>
+																											</args>
+																										</action>
+																									</action>
+																								</action>
+																							</action>
+																						</action>
+																					</action>
+																				</action>
+																			</action>
+																		</action>
+																	</action>	  
+																</action>
+															</action>
+														</action>
+														<action command='cancel' name='No.'>
+																<!-- Nothing -->
+														</action>
+													</args>
+												</action>
+  										</action>
+  									</action>
+  								</trigger>
+  							</trigger>
+  						</trigger>
+  					</trigger>		
+  				</trigger>
+  			</trigger>
+  		</trigger>
+  	</triggers>
+  	
+  	
+    
+    <!--<character name='andrew' x='1150' y='2600' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' 
+				 sheet='andrewsheet' state='walkFront' facing='Front' following='meenah'>
+			<action name='swap' command='changeChar'>andrew</action>
+		</character>-->
+    
+    <character name='kankri' x='1200' y='2870' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='kankriSheet' state='walkLeft' facing='Left'>
+      
+      <action class='snoop'/>
+			<action class='kankriTalk1'/>
+			<action class='kankriTalk2'>
+				<action command='changeChar'>
+					<args>kankri</args>
+					<action command='playSong'>
+						<args>ironInfidel</args>
+						<action command='removeAction'>
+							<args>kankri,Hablar.</args>
+							<action command='removeAction'>
+								<args>karkat,Hablar.</args>
+								
+							</action>
+						</action>
+					</action>
+					
+				</action>
+			</action>
+			<action class='kankriTalk3'/>
+			<action class='kankriTalk4'/>
+    </character>
+    
+    <character name='latula' x='2402' y='1720' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='latulaSheet' state='ollie' facing='Front'>
+			<animation name='ollie' sheet='latulaOllieSheet' x='-60' y='-110' />
+			<animation name='skate' sheet='latulaSkateSheet' x='-60' y='-110' />
+			<animation name='board' sheet='latulaBoardSheet' x='-60' y='-110' loopNum='1'/>
+			<action class='latulaTalk1' />
+			<action class='latulaTalk2' />
+			<action class='latulaTalk3'>
+				<action command='openChest'>
+					<args>latula,skateboard,@!:#OOOH-S&#205;#QU&#201;-PASA-GAMERS &#161;Has conseguido el APARATO DE CUATRO RUEDAS DE LATULA!</args>
+					<action command='playAnimation'>
+						<args>latula,walkFront</args>
+						<action command='removeAction'>
+							<args>latula,Ser Latula.</args>	
+						</action>
+					</action>
+				</action>
+			</action>
+			<action class='latulaTalk4' />
+			<action class='latulaTalk5' />
+			
+    </character>
+    
+    <character name='porrim' x='2220' y='1080' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='porrimSheet' state='walkLeft' facing='Left'>
+			<action class='porrimTalk1' />
+			<action class='porrimTalk2' />
+			<action class='porrimTalk3' />
+			<action class='porrimTalk4' />
+			<action name='Ser Porrim.' command='changeChar'>
+				<args>porrim</args>
+				<action command='playSong'>
+					<args>darlingDolorosa,43.88</args>
+					<action class='fix-twins'/>
+					
+				</action>
+				
+			</action>
+    </character>
+    
+    <character name='karkat' x='1140' y='2870' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='karkatSheet' state='walkRight' facing='Right'>
+      <action class='snoop'/>
+      <action class='karkatTalk1'/>
+      
+    </character>
+    
+    <sprite name='memoryBubble' x='2220' y='1200' width='20' height='20' depthing='1' collidable='true'>
+  		<animation name='image' sheet='blueBubbleSheet' x='-20' y='-40' />
+  		<action command='talk' sprite='porrim' name='Examinar burbuja.'>
+				<args>
+					@! Una burbuja en miniatura, la cual contiene tu recuerdo. Le echas un vistazo a su interior.
+					@! El recuerdo es de aqu&#237;, Prospit. Pasaste mucho tiempo all&#237; durante los interminables ciclos de la sesi&#243;n. Recuerdas con claridad este precipicio.
+					@! Pero... hab&#237;a una escalera, &#191;no? Est&#225;s casi segura de que escaleras hab&#237;a.
+				</args>
+				<action command='addSprite'>
+					<args>thirdRoomStaircase,thirdRoom</args>
+					<action command='addWalkable' noDelay='true'>
+						<args>thirdRoomExtraWalkable,thirdRoom</args>
+						<action command='addUnwalkable' noDelay='true'>
+							<args>thirdRoomExtraUnwalkable,thirdRoom</args>
+							<action command='addUnwalkable' noDelay='true'>
+								<args>thirdRoomExtraUnwalkable2,thirdRoom</args>
+								<action command='addMotionPath' noDelay='true'>
+									<args>thirdRoomExtraStairs,0.7,-0.7,0,1,0,0,thirdRoom</args>
+									<action command='playSound' noDelay='true'>
+										<args>stairSound</args>
+									</action>
+								</action>
+							</action>
+						</action>
+					</action>
+				</action>
+			</action>
+    	<action command='talk' sprite='!porrim' name='Examinar burbuja.'>
+    		<args>
+			  @!:#se-siente Una burbuja en miniatura. Pero no contiene tu recuerdo. La &#250;nica que puede verlo es Porrim.
+				</args>
+			</action>
+		</sprite>
+    
+    <sprite class='chest4' name='thirdRoomChest1' x='354' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest1,obj23,@! &#161;Has conseguido unos CUERNOS!
+      @!:#misterio-resuelto De todas las cosas est&#250;pidas que has visto, &#233;sta se lleva la palma. &#191;Qui&#233;n querr&#237;a llevar otro par de cuernos? A no ser que el que se los ponga compense unos cuernecitos abollados... &#161;ah, claro! Los humanos se los ponen para hacerse pasar por trolls y para no parecer tan idiotas. Se nota que era de un humano. </args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest2' x='526' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest2,obj24, @! &#161;Has conseguido una LANZA!
+      @!:#meenah-no-tiene-ni-idea-de-lo-que-estamos-hablando &#191;De qui&#233;n es este recuerdo? Esta cosa ha rondado por todas partes. Veamos, Tavros ten&#237;a una, pero muri&#243; atravesado por ella. La Reina Negra tambi&#233;n la ten&#237;a y, cuando era Snowman, a veces la usaba de boquilla. Picas Slick empu&#241;&#243; la misma lanza cuando se mont&#243; en el gancho equino. Y si mal no recuerdas, Snowman tambi&#233;n la us&#243; para ensartar a Cuart&#243;s. Pero eso pas&#243; en el banner de arriba, as&#237; que puede que te lo hayas perdido...</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest3' x='663' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest3,obj25,@! &#161;Has conseguido un COLGANTE DEL SUFRIDOR!
+      @!:#jeje#ahora-que-lo-piensas#no-te-quedar&#237;a-nada-mal En &#233;l se ve el Signo del Sinsigno. La leyenda del Sufridor se hizo muy popular en vuestra pi&#241;a tras morir y descubrir como fueron vuestras vidas en el mundo post-scratch, tanto que lleg&#243; a ser una moda religiosa. Parece que Aranea fue la que m&#225;s pic&#243; el anzuelo. Nunca se colgaba esas cosas del cuello HASTA su muerte. &#191;Tanta devoci&#243;n ser&#225; para fastidiar a Vantas? Seguro que le toca las narices ver siempre a la gente con esa cosa puesta.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest4' x='1623' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest4,obj26,@! &#161;Has conseguido un FAJO DE BOOND&#211;LARES!
+      @!:#qu&#233;-tiene-esto-que-ver-con-esta-&#237;mproba-alegor&#237;a-a-tumblr#en-fin Keep em coming! &#161;As&#237; se hace! A este ritmo volver&#225;s a ser rica en nada. Ser&#225;s la due&#241;a del cotarro en cuesti&#243;n de minutos. Despu&#233;s de salvarlo de su futura destrucci&#243;n, claro.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest5' x='1794' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest5,obj27,@!:#pasta-gansa#3B) &#161;Has conseguido un PU&#209;ADO DE BOOND&#211;LARES!
+      @!:#se-siente Algunos mensajes no tendr&#225;n sentido si no eres Meenah, pero no dejar&#225;s que eso te estropee el ambiente.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest6' x='1959' y='1150'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest6,obj28, @! &#161;Has conseguido una ROMPETRAPOS!
+      @!:#planeta-cutre#planeta-con-nombre-cutre Una motosierra muy popular entre las de la gama CRUZ DEL DIABLO. Al menos, lo era en Alternia. Vuestro planeta no molaba tanto como para poder vender estas cosas legalmente. Qu&#233; cutre era Beforus.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest5' name='thirdRoomChest7' x='320' y='2084'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest7,obj29, @! &#161;Has conseguido una GENUINA PERTENENCIA RELIGIOSA!
+      @!:#grilletes#sufridor#genuino#(todo-lo-genuino-que-pueda-ser-el-recuerdo-fantasma-de-un-objeto) Con estas cosas encadenaron a Vantas post-scratch de adulto en su lecho de muerte. Seguro que Serket apoquinar&#237;a un past&#243;n por esta basura. Los fan&#225;ticos de la religi&#243;n son siempre los m&#225;s panolis.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest5' name='thirdRoomChest8' x='2012' y='2092'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest8,obj30,@! &#161;Has conseguido un JUJU!
+      @!:#vale-te-chivo-una-pista#el-n&#250;mero-7 Parece ser un TEMPORIZADOR m&#225;gico, con el que se puede viajar en el tiempo an&#225;rquica y tontamente. Esta es la clase de objeto con el que se suele desmadrar la cronolog&#237;a. Se necesita un DESTROZAJUJUS para romper el objeto y subsanar los da&#241;os. Pero esos objetos son sumamente raros, si es que existen. No tienes ni la m&#225;s remota idea ni de cual es su forma.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest9' x='2628' y='2620'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest9,obj31,@! &#161;Has conseguido un GANCHO EQUINO ARRUGADO!
+      @!:#un-anfitri&#243;n-incre&#237;ble &#191;Qui&#233;n habr&#225; podido hacer algo as&#237; a este gran corcel de hierro fundido? Quienquiera que fuere deb&#237;a de tener una fuerza incre&#237;ble, una chuler&#237;a incre&#237;ble y un porte fofo tras agitarse incre&#237;ble.</args>
+      	<action command='removeAction'>
+      		<args>andrew,Talk.</args>
+      		<action command='addActions'>
+      			<args>andrew,
+      				<action class='andrewTalk2'/>
+      			</args>
+      		</action>
+      	</action>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest10' x='3156' y='2604'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest10,obj32,@! &#161;Has conseguido una BOLA BLANCA M&#193;GICA!
+      @!:#verdad#...#o-no Esto tambi&#233;n era un juju, &#191;no? Se lo preguntar&#237;as a la propia bola, pero es una pena que no sea transparente. Ya es inquietante que esto tambi&#233;n est&#233; aqu&#237;. Por suerte esto no es m&#225;s que un recuerdo, &#191;verdad?</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest11' x='3232' y='2604'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest11,obj33,@! &#161;Has conseguido una HOZ REGIA!
+      @!:#will-smith-troll Perfecta contra la realeza trillada. Se podr&#237;a decir que va de perlas con los... trill&#237;ncipes.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='thirdRoomChest12' x='3936' y='2600'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest12,obj34,@! &#161;Has conseguido una NOVELA ROM&#193;NTICA TROLL!
+      @!:#&#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;&#161;LAAAAALOOOOONDE!!!!!!!!!! Vaya, qu&#233; relato tan fogoso a la par que vulgar. Est&#225;s empezando a sudar y eso que solo llevas tres frases del t&#237;tulo. No parece que haya nadie cerca. Bueno, le echar&#225;s un vistacillo de nad... Uy, ha vuelto a desaparecer en un abrir y cerrar de ojos. Ser&#225; posible.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest5' name='thirdRoomChest13' x='2932' y='2120'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>thirdRoomChest13,obj35,@! &#161;Has conseguido un pu&#241;ado de TERRIERS ESCOCESES DE REGALIZ!
+      @!:#pero-ya-te-los-has-comido-casi-todos#vali&#243;-la-pena Dios, en tu planeta eran un MANJAR. Esta golosina val&#237;a su peso en oro. Hab&#237;a que andar bastante sobrado de pasta si quer&#237;as abastecerte de este dulce. &#161;&#161;&#161;&#161;&#161;Podr&#237;as venderlos y as&#237; recuperar&#237;as del tir&#243;n la mayor parte de tu fortuna!!!!!</args>
+    	</action>
+    </sprite>
+    
+    <sprite name='thirdRoomBG_0_0' x='0' y='0'><animation sheet='thirdRoomBG_0_0' /></sprite>
+<sprite name='thirdRoomBG_0_1' x='1000' y='0'><animation sheet='thirdRoomBG_0_1' /></sprite>
+<sprite name='thirdRoomBG_0_2' x='2000' y='0'><animation sheet='thirdRoomBG_0_2' /></sprite>
+<sprite name='thirdRoomBG_0_3' x='3000' y='0'><animation sheet='thirdRoomBG_0_3' /></sprite>
+<sprite name='thirdRoomBG_0_4' x='4000' y='0'><animation sheet='thirdRoomBG_0_4' /></sprite>
+<sprite name='thirdRoomBG_1_0' x='0' y='1000'><animation sheet='thirdRoomBG_1_0' /></sprite>
+<sprite name='thirdRoomBG_1_1' x='1000' y='1000'><animation sheet='thirdRoomBG_1_1' /></sprite>
+<sprite name='thirdRoomBG_1_2' x='2000' y='1000'><animation sheet='thirdRoomBG_1_2' /></sprite>
+<sprite name='thirdRoomBG_1_3' x='3000' y='1000'><animation sheet='thirdRoomBG_1_3' /></sprite>
+<sprite name='thirdRoomBG_1_4' x='4000' y='1000'><animation sheet='thirdRoomBG_1_4' /></sprite>
+<sprite name='thirdRoomBG_2_0' x='0' y='2000'><animation sheet='thirdRoomBG_2_0' /></sprite>
+<sprite name='thirdRoomBG_2_1' x='1000' y='2000'><animation sheet='thirdRoomBG_2_1' /></sprite>
+<sprite name='thirdRoomBG_2_2' x='2000' y='2000'><animation sheet='thirdRoomBG_2_2' /></sprite>
+<sprite name='thirdRoomBG_2_3' x='3000' y='2000'><animation sheet='thirdRoomBG_2_3' /></sprite>
+<sprite name='thirdRoomBG_2_4' x='4000' y='2000'><animation sheet='thirdRoomBG_2_4' /></sprite>
+<sprite name='thirdRoomBG_3_0' x='0' y='3000'><animation sheet='thirdRoomBG_3_0' /></sprite>
+<sprite name='thirdRoomBG_3_1' x='1000' y='3000'><animation sheet='thirdRoomBG_3_1' /></sprite>
+<sprite name='thirdRoomBG_3_2' x='2000' y='3000'><animation sheet='thirdRoomBG_3_2' /></sprite>
+<sprite name='thirdRoomBG_3_3' x='3000' y='3000'><animation sheet='thirdRoomBG_3_3' /></sprite>
+<sprite name='thirdRoomBG_3_4' x='4000' y='3000'><animation sheet='thirdRoomBG_3_4' /></sprite>
+<sprite name='thirdRoomBG_4_0' x='0' y='4000'><animation sheet='thirdRoomBG_4_0' /></sprite>
+<sprite name='thirdRoomBG_4_1' x='1000' y='4000'><animation sheet='thirdRoomBG_4_1' /></sprite>
+<sprite name='thirdRoomBG_4_2' x='2000' y='4000'><animation sheet='thirdRoomBG_4_2' /></sprite>
+<sprite name='thirdRoomBG_4_3' x='3000' y='4000'><animation sheet='thirdRoomBG_4_3' /></sprite>
+<sprite name='thirdRoomBG_4_4' x='4000' y='4000'><animation sheet='thirdRoomBG_4_4' /></sprite>
+
+    <sprite name='thirdRoomDoor' x='3076' y='602' width='68' height='20'>
+			<animation sheet='thirdRoomDoor' x='-60' y='-150'/>
+			<action class='doorTalk1'/>
+		</sprite>
+
+	
+    <sprite name='thirdRoomFG_0_0' x='0' y='0' depthing='2'><animation sheet='thirdRoomFG_0_0' /></sprite>
+<sprite name='thirdRoomFG_0_1' x='1000' y='0' depthing='2'><animation sheet='thirdRoomFG_0_1' /></sprite>
+
+<sprite name='thirdRoomFG_1_0' x='0' y='1000' depthing='2'><animation sheet='thirdRoomFG_1_0' /></sprite>
+<sprite name='thirdRoomFG_1_1' x='1000' y='1000' depthing='2'><animation sheet='thirdRoomFG_1_1' /></sprite>
+
+<sprite name='thirdRoomFG_2_0' x='0' y='2000' depthing='2'><animation sheet='thirdRoomFG_2_0' /></sprite>
+<sprite name='thirdRoomFG_2_1' x='1000' y='2000' depthing='2'><animation sheet='thirdRoomFG_2_1' /></sprite>
+<sprite name='thirdRoomFG_2_2' x='2000' y='2000' depthing='2'><animation sheet='thirdRoomFG_2_2' /></sprite>
+
+<sprite name='thirdRoomFG_3_0' x='0' y='3000' depthing='2'><animation sheet='thirdRoomFG_3_0' /></sprite>
+
+<sprite name='thirdRoomFG_3_2' x='2000' y='3000' depthing='2'><animation sheet='thirdRoomFG_3_2' /></sprite>
+
+
+
+  </room>
+  
+ 
+</rooms>
+</sburb>

@@ -1,0 +1,390 @@
+<sburb description="second room">
+
+<dependencies>
+	<dependency>secondRoomDialog.xml</dependency>
+</dependencies>
+
+<classes>
+	<animation class='rose-dialog' frameInterval='6' x='-190' y='-454'/>
+	<animation class='dave-dialog' frameInterval='6' x='-230' y='-454'/>
+	<animation class='kanaya-dialog' frameInterval='6' x='-180' y='-474'/>
+	<animation class='aranea-dialog' frameInterval='6' x='-260' y='-524'/>
+</classes>
+
+<assets>
+  
+  <asset name='araneaSheet' type='graphic'>chars/aranea.png</asset>
+  <asset name='davesheet' type='graphic'>chars/dave.png</asset>
+  <asset name='rosesheet' type='graphic'>chars/rose.png</asset>
+  <asset name='kanayasheet' type='graphic'>chars/kanaya.png</asset>
+  
+  <asset name='aranea_angry' type='graphic'>dialogs/aranea_angry.png</asset>
+	<asset name='aranea_angrytalk' type='graphic'>dialogs/aranea_angrytalk.png</asset>
+	<asset name='aranea_annoyed' type='graphic'>dialogs/aranea_annoyed.png</asset>
+	<asset name='aranea_annoyedtalk' type='graphic'>dialogs/aranea_annoyedtalk.png</asset>
+	<asset name='aranea_facepalm' type='graphic'>dialogs/aranea_facepalm.png</asset>
+	<asset name='aranea_facepalmtalk' type='graphic'>dialogs/aranea_facepalmtalk.png</asset>
+	<asset name='aranea_happier' type='graphic'>dialogs/aranea_happier.png</asset>
+	<asset name='aranea_happy' type='graphic'>dialogs/aranea_happy.png</asset>
+	<asset name='aranea_happytalk' type='graphic'>dialogs/aranea_happytalk.png</asset>
+	<asset name='aranea_idle' type='graphic'>dialogs/aranea_idle.png</asset>
+	<asset name='aranea_mad' type='graphic'>dialogs/aranea_mad.png</asset>
+	<asset name='aranea_madtalk' type='graphic'>dialogs/aranea_madtalk.png</asset>
+	<asset name='aranea_surprised' type='graphic'>dialogs/aranea_surprised.png</asset>
+	<asset name='aranea_talk' type='graphic'>dialogs/aranea_talk.png</asset>
+	<asset name='aranea_think' type='graphic'>dialogs/aranea_think.png</asset>
+	
+	<asset name='dave_concern' type='graphic'>dialogs/dave_concern.png</asset>
+	<asset name='dave_huh' type='graphic'>dialogs/dave_huh.png</asset>
+	<asset name='dave_huhtalk' type='graphic'>dialogs/dave_huhtalk.png</asset>
+	<asset name='dave_idle' type='graphic'>dialogs/dave_idle.png</asset>
+	<asset name='dave_mad' type='graphic'>dialogs/dave_mad.png</asset>
+	<asset name='dave_madtalk' type='graphic'>dialogs/dave_madtalk.png</asset>
+	<asset name='dave_smug' type='graphic'>dialogs/dave_smug.png</asset>
+	<asset name='dave_talk' type='graphic'>dialogs/dave_talk.png</asset>
+	
+	<asset name='kanaya_angrytalk' type='graphic'>dialogs/kanaya_angrytalk.png</asset>
+	<asset name='kanaya_bored' type='graphic'>dialogs/kanaya_bored.png</asset>
+	<asset name='kanaya_cry' type='graphic'>dialogs/kanaya_cry.png</asset>
+	<asset name='kanaya_facepalm' type='graphic'>dialogs/kanaya_facepalm.png</asset>
+	<asset name='kanaya_happy' type='graphic'>dialogs/kanaya_happy.png</asset>
+	<asset name='kanaya_happytalk' type='graphic'>dialogs/kanaya_happytalk.png</asset>
+	<asset name='kanaya_idle' type='graphic'>dialogs/kanaya_idle.png</asset>
+	<asset name='kanaya_smirklaugh' type='graphic'>dialogs/kanaya_smirklaugh.png</asset>
+	<asset name='kanaya_smirktalk' type='graphic'>dialogs/kanaya_smirktalk.png</asset>
+	<asset name='kanaya_talk' type='graphic'>dialogs/kanaya_talk.png</asset>
+	
+	<asset name='rose_annoyed' type='graphic'>dialogs/rose_annoyed.png</asset>
+	<asset name='rose_annoyedtalk' type='graphic'>dialogs/rose_annoyedtalk.png</asset>
+	<asset name='rose_concern' type='graphic'>dialogs/rose_concern.png</asset>
+	<asset name='rose_coy' type='graphic'>dialogs/rose_coy.png</asset>
+	<asset name='rose_coytalk' type='graphic'>dialogs/rose_coytalk.png</asset>
+	<asset name='rose_happy' type='graphic'>dialogs/rose_happy.png</asset>
+	<asset name='rose_happytalk' type='graphic'>dialogs/rose_happytalk.png</asset>
+	<asset name='rose_idle' type='graphic'>dialogs/rose_idle.png</asset>
+	<asset name='rose_laugh' type='graphic'>dialogs/rose_laugh.png</asset>
+	<asset name='rose_sad' type='graphic'>dialogs/rose_sad.png</asset>
+	<asset name='rose_talk' type='graphic'>dialogs/rose_talk.png</asset>	
+  
+  <asset name='secondRoomMap' type='graphic'>backgrounds/secondRoomMap.png</asset>
+  <asset name='secondRoomBG_0_0' type='graphic'>backgrounds/slices/secondRoomBG_0_0.png</asset>
+<asset name='secondRoomBG_0_1' type='graphic'>backgrounds/slices/secondRoomBG_0_1.png</asset>
+<asset name='secondRoomBG_0_2' type='graphic'>backgrounds/slices/secondRoomBG_0_2.png</asset>
+<asset name='secondRoomBG_0_3' type='graphic'>backgrounds/slices/secondRoomBG_0_3.png</asset>
+<asset name='secondRoomBG_0_4' type='graphic'>backgrounds/slices/secondRoomBG_0_4.png</asset>
+<asset name='secondRoomBG_1_0' type='graphic'>backgrounds/slices/secondRoomBG_1_0.png</asset>
+<asset name='secondRoomBG_1_1' type='graphic'>backgrounds/slices/secondRoomBG_1_1.png</asset>
+<asset name='secondRoomBG_1_2' type='graphic'>backgrounds/slices/secondRoomBG_1_2.png</asset>
+<asset name='secondRoomBG_1_3' type='graphic'>backgrounds/slices/secondRoomBG_1_3.png</asset>
+<asset name='secondRoomBG_1_4' type='graphic'>backgrounds/slices/secondRoomBG_1_4.png</asset>
+<asset name='secondRoomBG_2_0' type='graphic'>backgrounds/slices/secondRoomBG_2_0.png</asset>
+<asset name='secondRoomBG_2_1' type='graphic'>backgrounds/slices/secondRoomBG_2_1.png</asset>
+<asset name='secondRoomBG_2_2' type='graphic'>backgrounds/slices/secondRoomBG_2_2.png</asset>
+<asset name='secondRoomBG_2_3' type='graphic'>backgrounds/slices/secondRoomBG_2_3.png</asset>
+<asset name='secondRoomBG_2_4' type='graphic'>backgrounds/slices/secondRoomBG_2_4.png</asset>
+<asset name='secondRoomBG_3_0' type='graphic'>backgrounds/slices/secondRoomBG_3_0.png</asset>
+<asset name='secondRoomBG_3_1' type='graphic'>backgrounds/slices/secondRoomBG_3_1.png</asset>
+<asset name='secondRoomBG_3_2' type='graphic'>backgrounds/slices/secondRoomBG_3_2.png</asset>
+<asset name='secondRoomBG_3_3' type='graphic'>backgrounds/slices/secondRoomBG_3_3.png</asset>
+<asset name='secondRoomBG_3_4' type='graphic'>backgrounds/slices/secondRoomBG_3_4.png</asset>
+<asset name='secondRoomFG_0_0' type='graphic'>backgrounds/slices/secondRoomFG_0_0.png</asset>
+<asset name='secondRoomFG_0_1' type='graphic'>backgrounds/slices/secondRoomFG_0_1.png</asset>
+<asset name='secondRoomFG_0_2' type='graphic'>backgrounds/slices/secondRoomFG_0_2.png</asset>
+
+<asset name='secondRoomFG_1_0' type='graphic'>backgrounds/slices/secondRoomFG_1_0.png</asset>
+<asset name='secondRoomFG_1_1' type='graphic'>backgrounds/slices/secondRoomFG_1_1.png</asset>
+<asset name='secondRoomFG_1_2' type='graphic'>backgrounds/slices/secondRoomFG_1_2.png</asset>
+
+<asset name='secondRoomFG_2_0' type='graphic'>backgrounds/slices/secondRoomFG_2_0.png</asset>
+<asset name='secondRoomFG_2_1' type='graphic'>backgrounds/slices/secondRoomFG_2_1.png</asset>
+<asset name='secondRoomFG_2_2' type='graphic'>backgrounds/slices/secondRoomFG_2_2.png</asset>
+
+<asset name='secondRoomFG_3_0' type='graphic'>backgrounds/slices/secondRoomFG_3_0.png</asset>
+<asset name='secondRoomFG_3_1' type='graphic'>backgrounds/slices/secondRoomFG_3_1.png</asset>
+
+  <asset name='secondRoomStairs1' type='path'>1288,2866;1453,2702;1466,2825;1301,2966</asset>
+  
+  <asset name='obj11' type='graphic'>objects/11.png</asset>
+<asset name='obj12' type='graphic'>objects/12.png</asset>
+<asset name='obj13' type='graphic'>objects/13.png</asset>
+<asset name='obj14' type='graphic'>objects/14.png</asset>
+<asset name='obj15' type='graphic'>objects/15.png</asset>
+<asset name='obj16' type='graphic'>objects/16.png</asset>
+<asset name='obj17' type='graphic'>objects/17.png</asset>
+<asset name='obj18' type='graphic'>objects/18.png</asset>
+<asset name='obj19' type='graphic'>objects/19.png</asset>
+<asset name='obj20' type='graphic'>objects/20.png</asset>
+<asset name='obj21' type='graphic'>objects/21.png</asset>
+<asset name='obj22' type='graphic'>objects/22.png</asset>
+  
+</assets>
+
+<hud>
+	<dialogsprites>
+		<animation name='aranea_angry' class='aranea-dialog' sheet='aranea_angry' />
+		<animation name='aranea_angrytalk' class='aranea-dialog' sheet='aranea_angrytalk' length='2'/>
+		<animation name='aranea_annoyed' class='aranea-dialog' sheet='aranea_annoyed' />
+		<animation name='aranea_annoyedtalk' class='aranea-dialog' sheet='aranea_annoyedtalk' length='2'/>
+		<animation name='aranea_facepalm' class='aranea-dialog' sheet='aranea_facepalm' />
+		<animation name='aranea_facepalmtalk' class='aranea-dialog' sheet='aranea_facepalmtalk' length='2'/>
+		<animation name='aranea_happier' class='aranea-dialog' sheet='aranea_happier' length='2'/>
+		<animation name='aranea_happy' class='aranea-dialog' sheet='aranea_happy' />
+		<animation name='aranea_happytalk' class='aranea-dialog' sheet='aranea_happytalk' length='2'/>
+		<animation name='aranea_idle' class='aranea-dialog' sheet='aranea_idle' />
+		<animation name='aranea_mad' class='aranea-dialog' sheet='aranea_mad' />
+		<animation name='aranea_madtalk' class='aranea-dialog' sheet='aranea_madtalk' length='2'/>
+		<animation name='aranea_surprised' class='aranea-dialog' sheet='aranea_surprised' />
+		<animation name='aranea_talk' class='aranea-dialog' sheet='aranea_talk' length='2'/>
+		<animation name='aranea_think' class='aranea-dialog' sheet='aranea_think' />
+		<animation name='dave_concern' class='dave-dialog' sheet='dave_concern' length='2'/>
+		<animation name='dave_huh' class='dave-dialog' sheet='dave_huh' />
+		<animation name='dave_huhtalk' class='dave-dialog' sheet='dave_huhtalk' length='2'/>
+		<animation name='dave_idle' class='dave-dialog' sheet='dave_idle' />
+		<animation name='dave_mad' class='dave-dialog' sheet='dave_mad' />
+		<animation name='dave_madtalk' class='dave-dialog' sheet='dave_madtalk' length='2'/>
+		<animation name='dave_smug' class='dave-dialog' sheet='dave_smug' length='2'/>
+		<animation name='dave_talk' class='dave-dialog' sheet='dave_talk' length='2'/>
+		<animation name='kanaya_angrytalk' class='kanaya-dialog' sheet='kanaya_angrytalk' length='2'/>
+		<animation name='kanaya_bored' class='kanaya-dialog' sheet='kanaya_bored' length='2'/>
+		<animation name='kanaya_cry' class='kanaya-dialog' sheet='kanaya_cry' length='2'/>
+		<animation name='kanaya_facepalm' class='kanaya-dialog' sheet='kanaya_facepalm' length='2'/>
+		<animation name='kanaya_happy' class='kanaya-dialog' sheet='kanaya_happy' />
+		<animation name='kanaya_happytalk' class='kanaya-dialog' sheet='kanaya_happytalk' length='2'/>
+		<animation name='kanaya_idle' class='kanaya-dialog' sheet='kanaya_idle' />
+		<animation name='kanaya_smirklaugh' class='kanaya-dialog' sheet='kanaya_smirklaugh' length='2'/>
+		<animation name='kanaya_smirktalk' class='kanaya-dialog' sheet='kanaya_smirktalk' length='2'/>
+		<animation name='kanaya_talk' class='kanaya-dialog' sheet='kanaya_talk' length='2'/>
+		<animation name='rose_annoyed' class='rose-dialog' sheet='rose_annoyed' length='4' frameInterval='0:60,1:6'/>
+		<animation name='rose_annoyedtalk' class='rose-dialog' sheet='rose_annoyedtalk' length='2'/>
+		<animation name='rose_concern' class='rose-dialog' sheet='rose_concern' length='2'/>
+		<animation name='rose_coy' class='rose-dialog' sheet='rose_coy' />
+		<animation name='rose_coytalk' class='rose-dialog' sheet='rose_coytalk' length='2'/>
+		<animation name='rose_happy' class='rose-dialog' sheet='rose_happy' />
+		<animation name='rose_happytalk' class='rose-dialog' sheet='rose_happytalk' length='2' />
+		<animation name='rose_idle' class='rose-dialog' sheet='rose_idle' length='4' frameInterval='0:60,1:6'/>
+		<animation name='rose_laugh' class='rose-dialog' sheet='rose_laugh' length='2'/>
+		<animation name='rose_sad' class='rose-dialog' sheet='rose_sad' />
+		<animation name='rose_talk' class='rose-dialog' sheet='rose_talk' length='2'/>
+	</dialogsprites>
+</hud>
+
+<sprite depthing='2' name='obj11'>
+<animation x='-50' y='-50' sheet='obj11'/>
+</sprite>
+<sprite depthing='2' name='obj12'>
+<animation x='-50' y='-50' sheet='obj12'/>
+</sprite>
+<sprite depthing='2' name='obj13'>
+<animation x='-50' y='-50' sheet='obj13'/>
+</sprite>
+<sprite depthing='2' name='obj14'>
+<animation x='-50' y='-50' sheet='obj14'/>
+</sprite>
+<sprite depthing='2' name='obj15'>
+<animation x='-50' y='-50' sheet='obj15'/>
+</sprite>
+<sprite depthing='2' name='obj16'>
+<animation x='-50' y='-50' sheet='obj16'/>
+</sprite>
+<sprite depthing='2' name='obj17'>
+<animation x='-50' y='-50' sheet='obj17'/>
+</sprite>
+<sprite depthing='2' name='obj18'>
+<animation x='-50' y='-50' sheet='obj18'/>
+</sprite>
+<sprite depthing='2' name='obj19'>
+<animation x='-50' y='-50' sheet='obj19'/>
+</sprite>
+<sprite depthing='2' name='obj20'>
+<animation x='-50' y='-50' sheet='obj20'/>
+</sprite>
+<sprite name='obj21' x='900' y='3000' collidable='true' depthing='1' width='35' height='30'>
+	<animation x='-38' y='-44' sheet='obj21'/>
+	<action command='talk' name='Hablar.'>
+		<args>
+		@! &#161;Eh! Largo, chaval, este es MI ESCONDITE.
+		    @!:#La-muerte-del-autor#bueno#otra-vez &#191;&#191;&#191;Es que no ves que English quiere matarme???
+		    @! QUIERE MATAROS A TODOS.
+		</args>
+		<action command='removeSprite'>
+			<args>obj21,secondRoom</args>
+			<action command='addSprite'>
+				<args>secondRoomChest11,secondRoom</args>
+			</action>
+		</action>
+	</action>
+</sprite>
+<sprite depthing='2' name='obj22'>
+<animation x='-50' y='-50' sheet='obj22'/>
+</sprite>
+
+<rooms>
+   <room name='secondRoom' width='4622' height='3966' walkableMap='secondRoomMap'>
+  	<paths>
+  		<motionpath path="secondRoomStairs1" xtox = '0.7' xtoy = '-0.7' ytox='0' ytoy = '1' dx='0' dy='0'/>
+  	</paths>
+  	<triggers>
+  		<trigger>spriteProperty,char,x&lt;780
+  			<trigger>spriteProperty,char,y&lt;1500
+	  			<action command='deltaSprite'>
+	  				<args>char,12,0</args>
+	  				<action command='changeRoomRemote'>firstRoom.xml,firstRoom,4630,3057</action>
+	  			</action>
+  			</trigger>
+  		</trigger>
+  			<trigger>spriteProperty,char,y>3420
+	  			<action command='deltaSprite'>
+	  				<args>char,0,-12</args>
+	  				<action command='changeRoomRemote'>thirdRoom.xml,thirdRoom,1155,192</action>
+	  			</action>
+  			</trigger>
+  	</triggers>
+  	
+  	<sprite class='redBubble' name='redBubble1' x='1388' y='2200'> </sprite>
+  	<sprite class='redBubble' name='redBubble2' x='1164' y='2772'> </sprite>
+  	<sprite class='redBubble' name='redBubble3' x='1356' y='3048'> </sprite>
+  	<sprite class='redBubble' name='redBubble4' x='1564' y='2672'> </sprite>
+  	<sprite class='redBubble' name='redBubble5' x='4364' y='836'> </sprite>
+    
+    <character name='aranea' x='2636' y='1576' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='araneaSheet' state='walkFront' facing='Front'>
+      <action class='araneaDialog1'></action>
+      <action class='araneaDialog2'></action>
+    </character>
+    <character name='dave' x='1632' y='2632' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='davesheet' state='walkFront' facing='Front'>
+      <action class='daveDialog1'></action>
+      <action class='daveDialog2'></action>
+      <action class='daveDialog3'></action>
+    </character>
+    <character name='rose' x='3868' y='1340' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='rosesheet' state='walkFront' facing='Front'>
+      <action class='roseDialog1'></action>
+      <action class='roseDialog2'></action>
+    </character>
+    <character name='kanaya' x='4254' y='1678' sx='-50' sy='-110' sWidth='100' sHeight='130' width='48' height='21' 
+	       sheet='kanayasheet' state='walkLeft' facing='Left'>
+      <action class='kanayaDialog1'></action>
+      <action class='kanayaDialog2'></action>
+    </character>
+    
+    <sprite class='chest6' name='secondRoomChest1' x='1732' y='660'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest1,obj11,@! &#161;Has conseguido un JUJU!
+      @!:#ya-lo-empe&#241;ar&#225;s-ya Un PELELE, para ser exactos. Gracias a sus poderes m&#225;gicos, cualquiera que lleve el mismo sombrero que el mu&#241;eco sufrir&#225; los mismos da&#241;os. &#191;Y si lo ahorcas en este &#225;rbol? Nah, eso ya es un poco macabro.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest6' name='secondRoomChest2' x='4244' y='640'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest2,obj12,@! &#161;Has conseguido las ESPINAS DE OGLOGOTH! 
+      @!:#sabia-jugada Cualquier aventurero con un &#225;pice de sensatez confinar&#237;a dichos instrumentos sobrenaturales en el anillo lejano y se olvidar&#237;a de su existencia. Y... parece ser que alguien lo ha hecho.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest6' name='secondRoomChest3' x='392' y='2020'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest3,obj13,@! &#161;Has conseguido unas ESTRELLAS NINJA!
+      @!:#a-no-ser-que-te-hagan-una-oferta-del-cop&#243;n-claro C&#243;mo molan. Intentar&#225;s quedarte con algunas en vez de vender el lote entero.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest6' name='secondRoomChest4' x='1564' y='2292'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest4,obj20,@! &#161;Has conseguido unos TOCADISCOS DEL TIEMPO! 
+      @!:#&#161;ooh,-como-&#233;se-que-est&#225;-al-otro-lado!#seguro-que-est&#225;-forrado Se usan para viajar en el tiempo. Lo cual en el anillo lejano, no tiene mucho sentido. Al viajar al pasado podr&#237;as acabar a millones de ciclos luz de donde estabas. Ser&#225; mejor que se los vendas a alg&#250;n multimillonario exc&#233;ntrico.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest6' name='secondRoomChest5' x='2244' y='1780'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest5,obj15,@! &#161;Has conseguido una ESTATUA DE ECHIDNA! 
+      @!:#oh,-y-seguro-que-te-sacas-un-DINERAL-con-esto Es una representaci&#243;n, que evidentemente no est&#225; a escala, de la moradora con la que consult&#243; Aranea para saber como se scratcheaba la sesi&#243;n. Dicha decisi&#243;n trajo GRAVES CONSECUENCIAS, desde luego, y es ahora cuando se nota hasta donde han llegado esas consecuencias. Parece que ya le toca arreglar este desorden.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest6' name='secondRoomChest6' x='4428' y='1836'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest6,obj16,@! &#161;Has conseguido una M&#193;QUINA DE COSER!
+      @!:#ya-vendr&#225;s-luego-a-por-ella-cuando-no-haya-nadie Oooooh, esto puede valer un PASTIZAL, seguro que... espera. &#191;Qu&#233; pasa? La Maryam te mira raro. Ah, &#191;que es suya? No quieres que este cacharro te d&#233; ning&#250;n problema. Lo dejas alegremente donde estaba y sigues como si nada.</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest7' x='4548' y='2872'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest7,obj17,@! &#161;Has conseguido una POCI&#211;N FUCSIA!
+      @!:#la-tiras-por-ah&#237;#se-hace-a&#241;icos#alguien-grita-'ay' Hay leyendas de que esta poci&#243;n m&#225;gica puede conceder - DIOS sangre troll otra vez. Espera, esta es sangre REAL. Que desverg&#252;enza que alguien de la plebe haya osado embotellar esta plasma. Est&#225;s DEMASIADO furiosa como para que no te importe.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest8' x='3644' y='2896'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest8,obj18,@! &#161;Has conseguido un JUJU!
+      @!:#a-una-velocidad-exacta-de-un-segundo-por-segundo &#191;Qu&#233; hacen aqu&#237; todos estos jujus? Los jujus son objetos m&#225;gicos con una amplia variedad de poderes. Y nunca se sabe la forma que tendr&#225;n. Dicho esto, el poder de este objeto es de todo menos pr&#225;ctico. Gracias a &#233;l, se puede viajar en el tiempo. Pero solo al futuro.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest9' x='3216' y='2304'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest9,obj19, @! &#161;Has conseguido un PANFLETO DERSITA!
+      @!:#algunos-de-cosecha-propia En &#233;l se habla de la muerte de una humana, la cual ni te suena. Dentro est&#225; esa porquer&#237;a sensacionalista a la que ya est&#225;s tan acostumbrada. Pasaste mucho tiempo en Derse durante la sesi&#243;n. Siempre te han gustado estas revistas. Casi todas eran sobre atentados.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest10' x='1024' y='2896'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest10,obj14,  @! &#161;Has conseguido una CIMIRRANA!
+      @!:#eh-eh-&#191;&#191;&#191;est&#225;-hecha-de-rub&#237;???#VEN-CON-MAM&#193; No hay rival que no tiemble al contemplar la funesta plaga anfibia. El terror arrasa con sus corazones y... ja ja, anda ya. Esta espada es tan rid&#237;cula que no se puede expresar con palabras. Al menos, es un buen tema de conversaci&#243;n.
+</args>
+    	</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest11' x='900' y='3000'>
+    	<action command='removeSprite' name='Abrir.'>
+				<args>secondRoomChest11,secondRoom</args>
+				<action command='addSprite'>
+					<args>obj21,secondRoom</args>
+				</action>
+			</action>
+    </sprite>
+    <sprite class='chest4' name='secondRoomChest12' x='4028' y='1324'>
+    	<action command='openChest' name='Abrir.'>
+    		<args>secondRoomChest12,obj22,@! &#161;Has conseguido un ejemplar de LA SUFICIENCIA DE LOS ERUDITOS!
+      @!:#seguro-que-no-val&#237;a-ni-un-duro Hala, este libro tiene su... &#191;eh? Acaba de desaparecer visto y no visto. Pero qu&#233;... ah, lo tiene esa humana. Parece que se lo est&#225; pasando mejor de lo que har&#237;as t&#250; con ese libraco. Por esta vez, pase.</args>
+    	</action>
+    </sprite>
+    
+    <sprite name='secondRoomBG_0_0' x='0' y='0'><animation sheet='secondRoomBG_0_0' /></sprite>
+<sprite name='secondRoomBG_0_1' x='1000' y='0'><animation sheet='secondRoomBG_0_1' /></sprite>
+<sprite name='secondRoomBG_0_2' x='2000' y='0'><animation sheet='secondRoomBG_0_2' /></sprite>
+<sprite name='secondRoomBG_0_3' x='3000' y='0'><animation sheet='secondRoomBG_0_3' /></sprite>
+<sprite name='secondRoomBG_0_4' x='4000' y='0'><animation sheet='secondRoomBG_0_4' /></sprite>
+<sprite name='secondRoomBG_1_0' x='0' y='1000'><animation sheet='secondRoomBG_1_0' /></sprite>
+<sprite name='secondRoomBG_1_1' x='1000' y='1000'><animation sheet='secondRoomBG_1_1' /></sprite>
+<sprite name='secondRoomBG_1_2' x='2000' y='1000'><animation sheet='secondRoomBG_1_2' /></sprite>
+<sprite name='secondRoomBG_1_3' x='3000' y='1000'><animation sheet='secondRoomBG_1_3' /></sprite>
+<sprite name='secondRoomBG_1_4' x='4000' y='1000'><animation sheet='secondRoomBG_1_4' /></sprite>
+<sprite name='secondRoomBG_2_0' x='0' y='2000'><animation sheet='secondRoomBG_2_0' /></sprite>
+<sprite name='secondRoomBG_2_1' x='1000' y='2000'><animation sheet='secondRoomBG_2_1' /></sprite>
+<sprite name='secondRoomBG_2_2' x='2000' y='2000'><animation sheet='secondRoomBG_2_2' /></sprite>
+<sprite name='secondRoomBG_2_3' x='3000' y='2000'><animation sheet='secondRoomBG_2_3' /></sprite>
+<sprite name='secondRoomBG_2_4' x='4000' y='2000'><animation sheet='secondRoomBG_2_4' /></sprite>
+<sprite name='secondRoomBG_3_0' x='0' y='3000'><animation sheet='secondRoomBG_3_0' /></sprite>
+<sprite name='secondRoomBG_3_1' x='1000' y='3000'><animation sheet='secondRoomBG_3_1' /></sprite>
+<sprite name='secondRoomBG_3_2' x='2000' y='3000'><animation sheet='secondRoomBG_3_2' /></sprite>
+<sprite name='secondRoomBG_3_3' x='3000' y='3000'><animation sheet='secondRoomBG_3_3' /></sprite>
+<sprite name='secondRoomBG_3_4' x='4000' y='3000'><animation sheet='secondRoomBG_3_4' /></sprite>
+
+<sprite name='secondRoomFG_0_0' x='0' y='0' depthing='2'><animation sheet='secondRoomFG_0_0' /></sprite>
+<sprite name='secondRoomFG_0_1' x='1000' y='0' depthing='2'><animation sheet='secondRoomFG_0_1' /></sprite>
+<sprite name='secondRoomFG_0_2' x='2000' y='0' depthing='2'><animation sheet='secondRoomFG_0_2' /></sprite>
+
+<sprite name='secondRoomFG_1_0' x='0' y='1000' depthing='2'><animation sheet='secondRoomFG_1_0' /></sprite>
+<sprite name='secondRoomFG_1_1' x='1000' y='1000' depthing='2'><animation sheet='secondRoomFG_1_1' /></sprite>
+<sprite name='secondRoomFG_1_2' x='2000' y='1000' depthing='2'><animation sheet='secondRoomFG_1_2' /></sprite>
+
+<sprite name='secondRoomFG_2_0' x='0' y='2000' depthing='2'><animation sheet='secondRoomFG_2_0' /></sprite>
+<sprite name='secondRoomFG_2_1' x='1000' y='2000' depthing='2'><animation sheet='secondRoomFG_2_1' /></sprite>
+<sprite name='secondRoomFG_2_2' x='2000' y='2000' depthing='2'><animation sheet='secondRoomFG_2_2' /></sprite>
+
+<sprite name='secondRoomFG_3_0' x='0' y='3000' depthing='2'><animation sheet='secondRoomFG_3_0' /></sprite>
+<sprite name='secondRoomFG_3_1' x='1000' y='3000' depthing='2'><animation sheet='secondRoomFG_3_1' /></sprite>
+
+  </room>
+  
+ 
+</rooms>
+</sburb>
